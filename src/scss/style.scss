@@ -80,7 +80,7 @@
     }
 
     &:before {
-      content: url("/assets/imgs/shape/shape-14.webp");
+      content: url("/public/assets/imgs/shape/shape-14.webp");
       margin-inline-end: 14px;
       width: 24px;
       height: 24px;
@@ -89,7 +89,7 @@
 
     &.light {
       &:before {
-        content: url("/assets/imgs/shape/shape-14-light.webp");
+        content: url("/public/assets/imgs/shape/shape-14-light.webp");
       }
     }
   }
@@ -1557,7 +1557,7 @@
   }
 
   .sticky {
-    background-image: url("/assets/imgs/shape/shape-42.webp");
+    background-image: url("/public/assets/imgs/shape/shape-42.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -4490,7 +4490,7 @@
         content: "";
         height: 105px;
         width: 22px;
-        background-image: url("/assets/imgs/shape/shape-4.webp");
+        background-image: url("/public/assets/imgs/shape/shape-4.webp");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -8669,7 +8669,7 @@
     }
 
     &:after {
-      content: url("/assets/imgs/icon/icon-16.webp");
+      content: url("/public/assets/imgs/icon/icon-16.webp");
       border: none;
       right: 35px;
       top: 0%;
@@ -8968,7 +8968,7 @@
     }
 
     &:after {
-      content: url("/assets/imgs/icon/icon-16.webp");
+      content: url("/public/assets/imgs/icon/icon-16.webp");
       border: none;
       right: 35px;
       top: 0%;
@@ -9187,7 +9187,7 @@
       width: 100%;
     }
     &:after {
-      content: url("/assets/imgs/icon/icon-16.webp");
+      content: url("/public/assets/imgs/icon/icon-16.webp");
       border: none;
       right: 35px;
       top: 0%;
