@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 // Z Index
 @mixin zi($n) {
   position: relative;
@@ -118,7 +120,7 @@
 }
 
 
-// 
+//
 @mixin wc_overlay($bg_color: rgba(0, 0, 0, 0.3)) {
   position: relative;
 
@@ -135,28 +137,28 @@
   }
 }
 
-// dark 
+// dark
 @mixin dark {
   .dark & {
     @content;
   }
 }
 
-// Box Layout 
+// Box Layout
 @mixin boxLayout {
   .box-layout & {
     @content;
   }
 }
 
-// RTL Language 
+// RTL Language
 @mixin rtl {
   .dir-rtl & {
     @content;
   }
 }
 
-// heading  
+// heading
 @mixin heading($font_family, $font_weight, $line_height) {
 
   h1,

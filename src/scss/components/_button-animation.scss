@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
 /* button animation css */
 // Button Animation KeyFrame
 @keyframes mask_animation {
@@ -25,9 +28,9 @@
 }
 
 
-// 
+//
 // Button Hover Animation
-// 
+//
 .btn {
   &-hover {
 

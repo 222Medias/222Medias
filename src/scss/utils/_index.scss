@@ -1,6 +1,6 @@
-@import "variables";
-@import "mixin";
-@import "typography";
-@import "animation";
-@import "global";
-@import "theme";
+@forward "variables";
+@forward "mixin";
+@forward "typography";
+@forward "animation";
+@forward "global";
+@forward "theme";

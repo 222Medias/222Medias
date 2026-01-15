@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
 /*----------------------------------------*/
 /* button css */
 /*----------------------------------------*/
@@ -712,7 +715,7 @@ btn-text-flip
   }
 }
 
-// t-btn-group 
+// t-btn-group
 .t-btn-group {
   display: inline-flex;
 

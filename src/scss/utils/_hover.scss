@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixin" as *;
+
 // Social Media Hover Animation
 .hover {
   &-zoom {
@@ -52,7 +55,7 @@
 
 }
 
-// 
+//
 // Menu Hover Animation
 //
 .menu-hover {
@@ -74,9 +77,9 @@
 
 
 
-// 
+//
 // Blog Hover Animatoin
-// 
+//
 .blog-img {
   &-leftmove {
     img {
@@ -108,7 +111,7 @@
 }
 
 
-// image hover zoom animation 
+// image hover zoom animation
 .anim_img {
   &_zoom {
     img {
@@ -263,6 +266,6 @@
 }
 
 
-// 
+//
 // Instagram
-// 
+//
