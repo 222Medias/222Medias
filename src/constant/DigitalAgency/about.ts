@@ -22,10 +22,10 @@ export interface AboutData {
 }
 
 export const aboutData: AboutData = {
-  subtitle: "About Us",
-  title: "We ignite brands with bold creativity and innovative strategies.",
+  subtitle: "Who We Are",
+  title: "We Help Businesses Grow",
   description:
-    "Our professional team is dedicated to helping you achieve your digital goals. From website design and development to branding.",
+    "222Medias is a B2B marketing and web solutions agency helping businesses grow through strategy, creativity, and performance-driven execution.",
   ctaText: "Know more",
   ctaLink: "/digital-agency/about",
   circleImages: {

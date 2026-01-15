@@ -60,7 +60,7 @@ const AboutPage = (): ReactElement => {
       <Header />
       <SmoothScroll>
         <main>
-          <Breadcrumb title="ABOUT" subTitle="Agency" pageName="ABOUT AGENCY" />
+          <Breadcrumb title="ABOUT" subTitle="222Medias" pageName="ABOUT 222Medias" />
           <AboutSection className="page-about" data={aboutData} />
           <VideoSection data={videoData}/>
           <BrandSection data={brandData} />

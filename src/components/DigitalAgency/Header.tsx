@@ -34,34 +34,22 @@ interface HeaderData {
 // --- TYPED DATA OBJECT ---
 const headerData: HeaderData = {
   logo: {
-    href: "/digital-agency/",
-    src: "/assets/imgs/logo/logo.png",
+    href: "/",
+    src: "/assets/imgs/logo/logo.svg",
     alt: "Site Logo",
   },
-  siteCategory: "DIGITAL AGENCY ®",
+  siteCategory: "Marketing Agency",
   menuItems: [
     {
       title: "Home",
-      children: [
-        { title: "Creative Agency", href: "/creative-agency" },
-        { title: "Design Agency", href: "/design-agency" },
-        { title: "Digital Agency", href: "/digital-agency" },
-        { title: "AI Agency", href: "/ai-agency" },
-        { title: "Marketing Agency", href: "/marketing-agency" },
-        { title: "Digital Collective", href: "/digital-collective" },
-        { title: "Marketing Agency V2", href: "/marketing-agency-v2" },
-        { title: "Financial Advisor", href: "/financial-advisor" },
-      ],
+      href: "/",
     },
-    { title: "About", href: "/digital-agency/about" },
+    { title: "About", href: "/about" },
     {
       title: "Service",
-      children: [
-        { title: "Services", href: "/digital-agency/services" },
-        { title: "Service Details", href: "/digital-agency/service-details" },
-      ],
+        href: "/services",
     },
-    { title: "Contacts", href: "/digital-agency/contact" },
+    { title: "Contacts", href: "/contact" },
   ],
   socialLinks: [
     { title: "Linkedin", href: "#" },

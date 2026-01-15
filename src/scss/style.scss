@@ -616,10 +616,10 @@
   }
 
   &-logo {
-    width: 100px;
+    width: 170px;
 
     @media #{$xs} {
-      width: 100px;
+      width: 130px;
     }
 
     img {
@@ -1059,7 +1059,7 @@
 
   .header-logo {
     // width: 101px;
-    width: 140px;
+    width: 170px;
     margin-top: 6px;
 
     // @media #{$xl} {
@@ -1067,7 +1067,7 @@
     // }
 
     @media #{$md} {
-      width: 101px;
+      width: 130px;
     }
 
     img {
@@ -1180,7 +1180,7 @@
 
   .header-logo {
     // width: 101px;
-    width: 140px;
+    width: 170px;
 
     // @media #{$xl} {
     //   width: 101px;
@@ -1225,7 +1225,8 @@
 
   .t-btn-primary {
     padding: 10px 25px;
-
+    background-color: var(--action);
+    color: var(--white);
     @media #{$md} {
       padding: 10px 20px;
     }
@@ -7482,7 +7483,7 @@
     }
 
     .t-btn-primary {
-      background-color: var(--primary);
+      background-color: var(--theme);
       border-color: var(--white);
       color: var(--white);
     }

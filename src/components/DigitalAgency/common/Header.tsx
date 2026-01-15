@@ -25,81 +25,19 @@ interface HeaderData {
 
 const headerData: HeaderData = {
   logo: {
-    src: "/assets/imgs/logo/logo.png",
+    src: "/assets/imgs/logo/logo.svg",
     alt: "Site Logo",
-    href: "/digital-agency",
+    href: "/",
   },
   menuItems: [
     {
       title: "Home",
-      children: [
-        { title: "Creative Agency", href: "/creative-agency" },
-        { title: "Design Agency", href: "/design-agency" },
-        { title: "Digital Agency", href: "/digital-agency" },
-        { title: "AI Agency", href: "/ai-agency" },
-        { title: "Marketing Agency", href: "/marketing-agency" },
-        { title: "Digital Collective", href: "/digital-collective" },
-        { title: "Marketing Agency V2", href: "/marketing-agency-v2" },
-        { title: "Financial Advisor", href: "/financial-advisor" },
-      ],
+        href: "/",
     },
-    { title: "About Us", href: "/digital-agency/about" },
+    { title: "About Us", href: "/about" },
     {
       title: "Service",
-      children: [
-        { title: "Services", href: "/digital-agency/services" },
-        { title: "Service Details", href: "/digital-agency/service-details" },
-      ],
-    },
-    {
-      title: "Pages",
-      children: [
-        { title: "About Us", href: "/digital-agency/about" },
-        {
-          title: "Service",
-          children: [
-            { title: "Services", href: "/digital-agency/services" },
-            {
-              title: "Service Details",
-              href: "/digital-agency/service-details",
-            },
-          ],
-        },
-        {
-          title: "Portfolio Pages",
-          children: [
-            { title: "Portfolio", href: "/digital-agency/portfolio" },
-            { title: "Portfolio Grid", href: "/digital-agency/portfolio-grid" },
-            {
-              title: "Portfolio Slider",
-              href: "/digital-agency/portfolio-slider",
-            },
-            {
-              title: "Portfolio Details",
-              href: "/digital-agency/portfolio-details",
-            },
-          ],
-        },
-        { title: "Team", href: "/digital-agency/team" },
-        {
-          title: "Blog Pages",
-          children: [
-            { title: "Blog", href: "/digital-agency/blog" },
-            { title: "Blog Grid", href: "/digital-agency/blog-grid" },
-            { title: "Blog Details", href: "/digital-agency/blog-details" },
-          ],
-        },
-        { title: "FAQ", href: "/digital-agency/faq" },
-        { title: "Contact", href: "/digital-agency/contact" },
-      ],
-    },
-    {
-      title: "Blog",
-      children: [
-        { title: "Blog", href: "/digital-agency/blog" },
-        { title: "Blog Grid", href: "/digital-agency/blog-grid" },
-        { title: "Blog Details", href: "/digital-agency/blog-details" },
-      ],
+        href: "/services",
     },
     { title: "Contact", href: "/digital-agency/contact" },
   ],

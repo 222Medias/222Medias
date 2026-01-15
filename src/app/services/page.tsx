@@ -49,7 +49,7 @@ const Home = (): ReactElement => {
       <SmoothScroll>
         <main>
           <Breadcrumb
-            title="222Media"
+            title="222Medias"
             subTitle="Services"
             pageName="AGENCY SERVICES"
           />

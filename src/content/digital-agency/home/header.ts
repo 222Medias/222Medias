@@ -1,4 +1,4 @@
-import Logo from "@/../public/assets/imgs/logo/logo.png";
+import Logo from "@/../public/assets/imgs/logo/logo.svg";
 import CreativeAgency from "@/../public/assets/imgs/home-page/1.png";
 import DesignAgency from "@/../public/assets/imgs/home-page/2.png";
 import DigitalAgency from "@/../public/assets/imgs/home-page/3.png";

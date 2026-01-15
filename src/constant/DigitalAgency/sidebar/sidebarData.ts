@@ -40,7 +40,7 @@ export interface SidebarData {
 }
 
 const sidebar: SidebarData = {
-  logo: "/assets/imgs/logo/logo.png",
+  logo: "/assets/imgs/logo/logo.svg",
   menus: [
     {
       label: "Home",

@@ -29,30 +29,25 @@ import blogData from "@/constant/DigitalAgency/blog";
 import footerData from "@/constant/DigitalAgency/footer";
 
 export const metadata: Metadata = {
-  title: "Digital Agency || Averto - Creative Digital Agency NextJS Template",
+  title: "222media - Digital Marketing Agency",
   description:
-    "Averto Digital Agency template features a modern and dynamic homepage designed for digital agencies. Showcase your services, team, projects, and client success with a fast, SEO-friendly Next.js setup.",
+    "222media is a premier digital marketing agency focused on business outcomes, clear communication, and scalable solutions. We help businesses grow with strategic digital services.",
   keywords: [
-    "Averto digital agency",
-    "NextJS digital agency template",
-    "digital agency homepage",
-    "modern digital agency website",
+    "222media",
     "digital marketing agency",
-    "responsive digital agency site",
-    "SEO optimized digital agency",
-    "creative digital services",
-    "NextJS startup template",
-    "professional digital agency",
-    "agency services showcase",
-    "digital projects portfolio",
-    "team showcase",
-    "frontend development",
-    "digital marketing website",
+    "marketing agency",
+    "business growth",
+    "digital strategy",
+    "web development",
+    "SEO services",
+    "creative agency",
+    "brand strategy",
+    "marketing solutions",
   ],
-  creator: "PixaVation",
+  creator: "222media",
   other: {
-    developer: "PixaVation",
-    section: "Digital Agency Page",
+    developer: "222media",
+    section: "Home Page",
   },
 };
 
