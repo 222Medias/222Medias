@@ -58,15 +58,12 @@ const Home = (): ReactElement => {
       <SmoothScroll>
         <main>
           <HeroSection data={heroData} />
-          <BrandSection data={brandData} />
           <AboutSection data={aboutData} />
           <ProcessSection data={processData} />
           <ServiceSection data={serviceData} />
           <WorkSection data={workData} />
-          <TestimonialSection />
           <TeamsSection data={teamData} />
           <TextSliderSection data={textSliderData} />
-          <AwardsSection data={awardsData} />
           <BlogSection data={blogData} />
         </main>
         <FooterSection data={footerData}/>

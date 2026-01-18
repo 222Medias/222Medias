@@ -1,14 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import toast from "react-hot-toast";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { IContact } from "@/constant/DigitalAgency/Contact/contact";
 import Link from "next/link";
-
-interface FormData {
-  Name: string;
-  Email: string;
-  Messages: string;
-}
 
 interface ContactProps {
   data: IContact;
@@ -24,42 +18,7 @@ const ContactSection: React.FC<ContactProps> = ({ data: contactData }) => {
     formFields,
     buttonText,
   } = contactData;
-
-  const [formData, setFormData] = useState<FormData>({
-    Name: "",
-    Email: "",
-    Messages: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const { Name, Email, Messages } = formData;
-    if (!Name.trim() || !Email.trim() || !Messages.trim()) {
-      toast.error("Please fill in all the fields before submitting.");
-      return;
-    }
-
-    console.log(formData);
-    const toastId = toast.loading("Sending your message...");
-    try {
-      await new Promise((r) => setTimeout(r, 900));
-      toast.success("Your message has been sent successfully!", {
-        id: toastId,
-      });
-      setFormData({
-        Name: "",
-        Email: "",
-        Messages: "",
-      });
-    } catch {
-      toast.error("Something went wrong. Please try again.", { id: toastId });
-    }
-  };
+  const [state, handleSubmit] = useForm("xjvqqbyy");
 
   return (
     <>
@@ -101,44 +60,69 @@ const ContactSection: React.FC<ContactProps> = ({ data: contactData }) => {
                 </div>
               </div>
               <div className="contact-wrap fade-anim" data-direction="left">
-                <form onSubmit={handleSubmit}>
-                  <div className="contact-formwrap">
-                    {formFields?.map((field, index) => (
-                      <div
-                        className={`contact-formfield${
-                          field?.name === "Messages" ? " messages" : ""
-                        }`}
-                        key={index}
+                {state.succeeded ? (
+                  <div className="section-title-wrapper text-center">
+                    <h2 className="section-title">Thanks for your message!</h2>
+                    <p>We'll be in touch soon.</p>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit}>
+                    <div className="contact-formwrap">
+                      {formFields.map((field) => (
+                        <div
+                          key={field.name}
+                          className={`contact-formfield ${
+                            field.type === "textarea" ? "messages" : ""
+                          }`}
+                        >
+                          <img
+                            className="input-icon"
+                            src={field.icon}
+                            alt="icon"
+                          />
+                          <h3 className="title">{field.label}</h3>
+                          {field.type === "textarea" ? (
+                            <textarea
+                              name={field.name}
+                              id={field.name}
+                              placeholder={field.placeholder}
+                            ></textarea>
+                          ) : (
+                            <input
+                              type={field.type}
+                              name={field.name}
+                              id={field.name}
+                              placeholder={field.placeholder}
+                            />
+                          )}
+                          <ValidationError
+                            prefix={field.label}
+                            field={field.name}
+                            errors={state.errors}
+                            className="error-message"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="submit-btn">
+                      <button
+                        type="submit"
+                        className="t-btn t-btn-group"
+                        disabled={state.submitting}
                       >
-                        <img
-                          className="input-icon"
-                          src={field?.icon}
-                          alt="icon"
-                        />
-                        <h3 className="title">{field?.label}</h3>
-                        <input
-                          type={field?.type}
-                          name={field?.name}
-                          id={field?.name}
-                          placeholder={field?.placeholder}
-                          value={formData[field?.name as keyof FormData] || ""}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <div className="submit-btn">
-                    <button type="submit" className="t-btn t-btn-group">
-                      <span className="t-btn t-btn-circle">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                      <span className="t-btn t-btn-primary">{buttonText}</span>
-                      <span className="t-btn t-btn-circle">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </button>
-                  </div>
-                </form>
+                        <span className="t-btn t-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </span>
+                        <span className="t-btn t-btn-primary">
+                          {buttonText}
+                        </span>
+                        <span className="t-btn t-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                )}
               </div>
             </div>
           </div>

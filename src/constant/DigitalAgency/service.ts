@@ -64,20 +64,20 @@ const serviceData = {
         ],
         itemLink: "/service-details",
       },
-      {
-        id: 4,
-        title: "Branding & Creative",
-        number: "(04)",
-        image: "/assets/imgs/shape/shape-8.webp",
-        description: "Brand identity systems, campaign design, and digital assets.",
-        detailsLink: "/contact",
-        items: [
-          "1. Technical SEO",
-          "2. On-page optimization",
-          "3. SEO audits and analysis",
-        ],
-        itemLink: "/service-details",
-      },
+      // {
+      //   id: 4,
+      //   title: "Branding & Creative",
+      //   number: "(04)",
+      //   image: "/assets/imgs/shape/shape-8.webp",
+      //   description: "Brand identity systems, campaign design, and digital assets.",
+      //   detailsLink: "/contact",
+      //   items: [
+      //     "1. Technical SEO",
+      //     "2. On-page optimization",
+      //     "3. SEO audits and analysis",
+      //   ],
+      //   itemLink: "/service-details",
+      // },
     ],
   };
 

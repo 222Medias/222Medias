@@ -19,26 +19,38 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
             <div className="footer-widget-box newsletter">
               <div className="subscription-box">
                 <div className="title-wrapper">
-                  <h2 className="section-title">{footerData?.newsletter?.title}</h2>
+                  <h2 className="section-title">{footerData?.title}</h2>
                 </div>
                 <div className="text-wrapper">
-                  <p className="text">{footerData?.newsletter?.subtitle}</p>
+                  <p className="text">{footerData?.subtitle}</p>
                 </div>
-                <div className="subscribe-form">
-                  <div className="input-field">
-                    <input
-                      type="email"
-                      placeholder={footerData?.newsletter?.placeholder}
-                    />
-                    <button
-                      type="submit"
-                      className="subscribe-btn t-btn-primary bg-active"
-                    >
-                      {footerData?.newsletter?.buttonText}
-                    </button>
-                  </div>
-                </div>
+                {/*<div className="subscribe-form">*/}
+                {/*  <div className="input-field">*/}
+                {/*    <input*/}
+                {/*      type="email"*/}
+                {/*      placeholder={footerData?.newsletter?.placeholder}*/}
+                {/*    />*/}
+                {/*    <button*/}
+                {/*      type="submit"*/}
+                {/*      className="subscribe-btn t-btn-primary bg-active"*/}
+                {/*    >*/}
+                {/*      {footerData?.newsletter?.buttonText}*/}
+                {/*    </button>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
               </div>
+            </div>
+
+            {/* Solutions Links */}
+            <div className="footer-widget-box">
+              {/*<h2 className="title">Solutions</h2>*/}
+              {/*<ul className="footer-nav-list">*/}
+              {/*  {footerData?.solutionsLinks?.map((link:IFooterLink, idx:number) => (*/}
+              {/*    <li key={idx}>*/}
+              {/*      <Link href={link?.href || "#"}>{link?.name}</Link>*/}
+              {/*    </li>*/}
+              {/*  ))}*/}
+              {/*</ul>*/}
             </div>
 
             {/* Company Links */}
@@ -46,18 +58,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
               <h2 className="title">Company</h2>
               <ul className="footer-nav-list">
                 {footerData?.companyLinks?.map((link:IFooterLink, idx:number) => (
-                  <li key={idx}>
-                    <Link href={link?.href || "#"}>{link?.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Solutions Links */}
-            <div className="footer-widget-box">
-              <h2 className="title">Solutions</h2>
-              <ul className="footer-nav-list">
-                {footerData?.solutionsLinks?.map((link:IFooterLink, idx:number) => (
                   <li key={idx}>
                     <Link href={link?.href || "#"}>{link?.name}</Link>
                   </li>
@@ -90,13 +90,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
               </Link>
             </div>
             <div className="copyright-text">
-              <p className="text">
-                Copyright © {footerData?.copyright?.year}{" "}
-                <Link href={footerData?.copyright?.link}>
-                  {footerData?.copyright?.text}
-                </Link>
-                . All rights reserved.
-              </p>
+              {/*<p className="text">*/}
+              {/*  Copyright © {footerData?.copyright?.year}{" "}*/}
+              {/*  <Link href={footerData?.copyright?.link}>*/}
+              {/*    {footerData?.copyright?.text}*/}
+              {/*  </Link>*/}
+              {/*  . All rights reserved.*/}
+              {/*</p>*/}
             </div>
             <div className="social-links">
               {footerData?.socialLinks?.map((link:IFooterLink, idx:number) => (

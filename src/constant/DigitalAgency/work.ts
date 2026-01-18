@@ -25,32 +25,31 @@ const workData:WorkData = {
         id: 1,
         title: "Brand identity overhaul for Luxe Co.",
         tags: ["BRANDING", "MOCKUP"],
-        image: "/assets/imgs/project/project-1.webp",
+        image: "/assets/imgs/project/project-1.png",
         link: "/digital-agency/portfolio-details",
       },
       {
         id: 2,
         title: "E-Commerce platform design for shopy",
         tags: ["BRANDING", "MOCKUP"],
-        image: "/assets/imgs/project/project-2.webp",
+        image: "/assets/imgs/project/project-2.png",
         link: "/digital-agency/portfolio-details",
       },
       {
         id: 3,
         title: "Mobile app design for FitPro agency",
         tags: ["BRANDING", "MOCKUP"],
-        image: "/assets/imgs/project/project-3.webp",
+        image: "/assets/imgs/project/project-3.png",
         link: "/digital-agency/portfolio-details",
       },
       {
         id: 4,
         title: "Digital Ad campaign for FlexWear",
         tags: ["BRANDING", "MOCKUP"],
-        image: "/assets/imgs/project/project-4.webp",
+        image: "/assets/imgs/project/project-4.png",
         link: "/digital-agency/portfolio-details",
       },
     ],
   };
-  
+
   export default workData;
-  

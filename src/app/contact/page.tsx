@@ -8,7 +8,7 @@ import Header from "@/components/DigitalAgency/common/Header";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 
-// all data 
+// all data
 import footerData from "@/constant/DigitalAgency/footer";
 import contactData from "@/constant/DigitalAgency/Contact/contact";
 import chooseUsData from "@/constant/DigitalAgency/common/choose-us";
@@ -50,8 +50,8 @@ const Home = (): ReactElement => {
         <main>
           <Breadcrumb
             title="AGENCY"
-            subTitle="Contact"
-            pageName="AGENCY CONTACT"
+            subTitle="222Medias"
+            pageName="222Medias CONTACT"
           />
           <ContactMetaSection />
           <ContactSection data={contactData}/>

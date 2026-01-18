@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xjvqqbyy");
+
   return (
     <div className="contact-us__area pt-150 pb-150">
       <div className="container">
@@ -122,48 +125,113 @@ const ContactForm = () => {
           </div>
           <div className="col-lg-6 fade_up_anim" data-delay=".4">
             <div className="contact-us__form">
-              <h4 className="h4">Drop us texts</h4>
-              <form
-                className="contact-us__form-form"
-                onSubmit={(e) => e.preventDefault()}
-              >
-                <div className="contact-us__form-namePhoneWrapper">
-                  <div className="contact-us__form-name">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="name"
-                    />
-                  </div>
-                  <div className="contact-us__form-phone">
-                    <input
-                      type="number"
-                      name="phone"
-                      id="phone"
-                      placeholder="phone"
-                    />
-                  </div>
+              {state.succeeded ? (
+                <div className="text-center">
+                  <h4 className="h4">Thanks for your message!</h4>
+                  <p>We'll get back to you soon.</p>
                 </div>
-                <div className="contact-us__form-email">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="e-mail"
-                  />
-                </div>
-                <div className="contact-us__form-message">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="message"
-                  ></textarea>
-                </div>
-                <button className="common-btn outline justify-content-center border-light w-100">
-                  <span>Submit</span>
-                </button>
-              </form>
+              ) : (
+                <>
+                  <h4 className="h4">Drop us texts</h4>
+                  <form
+                    className="contact-us__form-form"
+                    onSubmit={handleSubmit}
+                  >
+                    <div className="contact-us__form-email">
+                      <input
+                        id="fullName"
+                        type="text"
+                        name="fullName"
+                        placeholder="Full Name"
+                      />
+                      <ValidationError
+                        prefix="Full Name"
+                        field="fullName"
+                        errors={state.errors}
+                        className="text-danger"
+                      />
+                    </div>
+                    <div className="contact-us__form-email">
+                      <input
+                        id="companyName"
+                        type="text"
+                        name="companyName"
+                        placeholder="Company Name"
+                      />
+                      <ValidationError
+                        prefix="Company Name"
+                        field="companyName"
+                        errors={state.errors}
+                        className="text-danger"
+                      />
+                    </div>
+                    <div className="contact-us__form-email">
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                      />
+                      <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                        className="text-danger"
+                      />
+                    </div>
+                    <div className="contact-us__form-namePhoneWrapper">
+                      <div className="contact-us__form-name">
+                        <input
+                          id="projectType"
+                          type="text"
+                          name="projectType"
+                          placeholder="Project Type"
+                        />
+                        <ValidationError
+                          prefix="Project Type"
+                          field="projectType"
+                          errors={state.errors}
+                          className="text-danger"
+                        />
+                      </div>
+                      <div className="contact-us__form-phone">
+                        <input
+                          id="estimatedBudget"
+                          type="text"
+                          name="estimatedBudget"
+                          placeholder="Estimated Budget"
+                        />
+                        <ValidationError
+                          prefix="Estimated Budget"
+                          field="estimatedBudget"
+                          errors={state.errors}
+                          className="text-danger"
+                        />
+                      </div>
+                    </div>
+                    <div className="contact-us__form-message">
+                      <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Message"
+                      ></textarea>
+                      <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                        className="text-danger"
+                      />
+                    </div>
+                    <button
+                      className="common-btn outline justify-content-center border-light w-100"
+                      type="submit"
+                      disabled={state.submitting}
+                    >
+                      <span>Submit</span>
+                    </button>
+                  </form>
+                </>
+              )}
             </div>
           </div>
         </div>

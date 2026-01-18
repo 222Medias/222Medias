@@ -33,7 +33,7 @@ export const aboutData: AboutData = {
     iconImg: "/assets/imgs/shape/shape-3.webp",
     link: "#awards",
   },
-  mainImage: "/assets/imgs/gallery/image-2.webp",
+  mainImage: "/assets/imgs/gallery/about-home.jpg",
   counters: [
     { value: 3.5, suffix: "k", label: "Completed Projects", delay: "0.30" },
     { value: 25, suffix: "+", label: "Years Of Experience", delay: "0.45" },

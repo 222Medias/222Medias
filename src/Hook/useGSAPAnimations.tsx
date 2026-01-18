@@ -363,7 +363,8 @@ const useGSAPAnimations = (): void => {
             if (
               document.querySelectorAll(".header-stacking-items").length > 0
             ) {
-              mm.add("(min-width: 991px)", () => {
+              // mm.add("(min-width: 991px)", () => {
+              mm.add("(min-width: 0px)", () => {
                 const items: Element[] = gsap.utils.toArray(".item");
 
                 items.forEach((item: Element, i: number) => {

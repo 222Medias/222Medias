@@ -1,3 +1,5 @@
+
+
 export interface IContact {
   subtitle: string;
   title: string;
@@ -12,61 +14,88 @@ export interface IContact {
     link: string;
   }[];
   formFields: {
-    icon: string;
-    label: string;
     name: string;
-    placeholder: string;
+    label: string;
     type: string;
+    placeholder: string;
+    icon: string;
   }[];
   buttonText: string;
 }
 
 const contactData: IContact = {
-  subtitle: "Let’s connect",
-  title: "Let’s work together",
+  subtitle: "Contact us",
+  title: "Let's create something great together!",
   description:
-    "People know what an FAQ is, so make that your page title. Don’t over complicate thing have calling it’s good to know or more info.",
+    "Tell us about your business and goals. Our team will review your request and get book to you shortly.",
   contactInfo: [
     {
       icon: "/assets/imgs/icon/icon-17.webp",
-      label: "example@avertog.com",
-      link: "mailto:example@avertog.com",
+      label: "hello@222media.com",
+      link: "mailto:hello@222media.com",
     },
     {
       icon: "/assets/imgs/icon/icon-18.webp",
-      label: "+1 287-366-566",
-      link: "tel:+1287366566",
+      label: "+1 (555) 123-4567",
+      link: "tel:+15551234567",
+    },
+    {
+      icon: "/assets/imgs/icon/icon-17.webp",
+      label: "123 Media Street, Suite 456, Digital City",
+      link: "#",
     },
   ],
   socialLinks: [
-    { icon: "fa-facebook-f", link: "#" },
-    { icon: "fa-twitter", link: "#" },
-    { icon: "fa-linkedin-in", link: "#" },
+    { icon: "fa-facebook-f", link: "https://www.facebook.com" },
+    { icon: "fa-x-twitter", link: "https://www.twitter.com" },
+    { icon: "fa-linkedin-in", link: "https://www.linkedin.com" },
+    { icon: "fa-instagram", link: "https://www.instagram.com" },
   ],
   formFields: [
     {
+      name: "fullName",
+      label: "Full Name",
+      type: "text",
+      placeholder: "Your Full Name",
       icon: "/assets/imgs/icon/icon-19.webp",
-      label: "What’s your name?",
-      name: "Name",
-      placeholder: "Full name here",
-      type: "text",
     },
     {
+      name: "companyName",
+      label: "Company Name",
+      type: "text",
+      placeholder: "Your Company Name",
       icon: "/assets/imgs/icon/icon-20.webp",
-      label: "What’s your e-mail?",
-      name: "Email",
-      placeholder: "Enter your mail here",
-      type: "email",
     },
     {
-      icon: "/assets/imgs/icon/icon-21.webp",
-      label: "Have any message?",
-      name: "Messages",
-      placeholder: "Write your message here",
+      name: "email",
+      label: "Email Address",
+      type: "email",
+      placeholder: "Your Email Address",
+      icon: "/assets/imgs/icon/icon-20.webp",
+    },
+    {
+      name: "projectType",
+      label: "Project Type",
       type: "text",
+      placeholder: "e.g., Web Design, SEO",
+      icon: "/assets/imgs/icon/icon-19.webp",
+    },
+    {
+      name: "estimatedBudget",
+      label: "Estimated Budget",
+      type: "text",
+      placeholder: "Your Estimated Budget",
+      icon: "/assets/imgs/icon/icon-19.webp",
+    },
+    {
+      name: "message",
+      label: "Message",
+      type: "textarea",
+      placeholder: "Your Message",
+      icon: "/assets/imgs/icon/icon-19.webp",
     },
   ],
-  buttonText: "Contact Us",
+  buttonText: "Send Message",
 };
 
 export default contactData;
