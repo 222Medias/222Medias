@@ -17,12 +17,7 @@ const ContactMetaSection:React.FC = () => {
                   <div className="meta-list">
                     <ul>
                       <li>
-                        <Link href="mailto:info@averto.com">info@averto.com</Link>
-                      </li>
-                      <li>
-                        <Link href="mailto:example@avertogmail.com">
-                          example@avertogmail.com
-                        </Link>
+                        <Link href="mailto:hello@222media.com">hello@222media.com</Link>
                       </li>
                     </ul>
                   </div>

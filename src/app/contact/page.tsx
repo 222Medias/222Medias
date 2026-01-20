@@ -53,7 +53,7 @@ const Home = (): ReactElement => {
             subTitle="222Medias"
             pageName="222Medias CONTACT"
           />
-          <ContactMetaSection />
+          {/*<ContactMetaSection />*/}
           <ContactSection data={contactData}/>
           <ChooseUsSection chooseUSTwo={true} data={chooseUsData}/>
         </main>

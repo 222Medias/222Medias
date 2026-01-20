@@ -39,7 +39,7 @@ const headerData: HeaderData = {
       title: "Service",
         href: "/services",
     },
-    { title: "Contact", href: "/digital-agency/contact" },
+    { title: "Contact", href: "/contact" },
   ],
   cta: {
     href: "/digital-agency/contact",

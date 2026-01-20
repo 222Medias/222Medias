@@ -15,7 +15,6 @@ export interface SidebarContactItem {
 }
 
 export interface SidebarContact {
-  phone: SidebarContactItem;
   email: SidebarContactItem;
   address: string;
 }
@@ -116,15 +115,14 @@ const sidebar: SidebarData = {
   },
   ctaIcon: "fa-solid fa-arrow-right",
   gallery: [
-    "/assets/imgs/gallery/image-48.webp",
-    "/assets/imgs/gallery/image-49.webp",
-    "/assets/imgs/gallery/image-50.webp",
-    "/assets/imgs/gallery/image-51.webp",
+    "/assets/imgs/gallery/footer-image1.webp",
+    "/assets/imgs/gallery/footer-image2.webp",
+    "/assets/imgs/gallery/footer-image3.webp",
+    "/assets/imgs/gallery/footer-image4.webp",
   ],
   contact: {
-    phone: { text: "+2230 6965 119", href: "tel:+22306965119" },
-    email: { text: "averto@gmail.com", href: "mailto:averto@gmail.com" },
-    address: "Avenue de Roma 1588, Lisboa",
+    email: { text: "hello@222media.com", href: "mailto:hello@222media.com" },
+    address: "Louisville, KY",
   },
   social: [
     { label: "FB", href: "#" },

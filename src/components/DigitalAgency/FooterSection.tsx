@@ -19,7 +19,12 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
             <div className="footer-widget-box newsletter">
               <div className="subscription-box">
                 <div className="title-wrapper">
-                  <h2 className="section-title">{footerData?.title}</h2>
+                  {/*<h2 className="section-title">{footerData?.title}</h2>*/}
+                  <div className="footer-logo">
+                    <Link href="/">
+                      <img src={footerData?.logo} alt="site logo" />
+                    </Link>
+                  </div>
                 </div>
                 <div className="text-wrapper">
                   <p className="text">{footerData?.subtitle}</p>
@@ -84,11 +89,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
       <div className="copyright-area">
         <div className="container">
           <div className="copyright-area-inner">
-            <div className="footer-logo">
-              <Link href="/digital-agency/">
-                <img src={footerData?.logo} alt="site logo" />
-              </Link>
-            </div>
             <div className="copyright-text">
               {/*<p className="text">*/}
               {/*  Copyright © {footerData?.copyright?.year}{" "}*/}

@@ -34,14 +34,14 @@ const contactData: IContact = {
       label: "hello@222media.com",
       link: "mailto:hello@222media.com",
     },
-    {
-      icon: "/assets/imgs/icon/icon-18.webp",
-      label: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-    },
+    // {
+    //   icon: "/assets/imgs/icon/icon-18.webp",
+    //   label: "+1 (555) 123-4567",
+    //   link: "tel:+15551234567",
+    // },
     {
       icon: "/assets/imgs/icon/icon-17.webp",
-      label: "123 Media Street, Suite 456, Digital City",
+      label: "Louisville, KY",
       link: "#",
     },
   ],

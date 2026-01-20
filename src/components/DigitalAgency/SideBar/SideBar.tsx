@@ -79,13 +79,13 @@ const Sidebar = ({
             <div className="offset-widget-box">
               <h2 className="title">Information</h2>
               <div className="contact-meta">
-                <div className="contact-item">
-                  <span className="text">
-                    <Link href={sidebarData?.contact?.phone?.href}>
-                      {sidebarData?.contact?.phone?.text}
-                    </Link>
-                  </span>
-                </div>
+                {/*<div className="contact-item">*/}
+                {/*  <span className="text">*/}
+                {/*    <Link href={sidebarData?.contact?.phone?.href}>*/}
+                {/*      {sidebarData?.contact?.phone?.text}*/}
+                {/*    </Link>*/}
+                {/*  </span>*/}
+                {/*</div>*/}
                 <div className="contact-item">
                   <span className="text">
                     <a href={sidebarData?.contact?.email?.href}>

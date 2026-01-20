@@ -359,34 +359,99 @@ const useGSAPAnimations = (): void => {
 
           const gsapHeaderStackingAnimation = (): void => {
             const mm = gsap.matchMedia();
+            const stackingContainer = document.querySelector<HTMLElement>(
+              ".header-stacking-items"
+            );
 
-            if (
-              document.querySelectorAll(".header-stacking-items").length > 0
-            ) {
-              // mm.add("(min-width: 991px)", () => {
-              mm.add("(min-width: 0px)", () => {
-                const items: Element[] = gsap.utils.toArray(".item");
+            if (stackingContainer) {
+              // Desktop: Stacking animation
+              mm.add("(min-width: 768px)", () => {
+                const items = gsap.utils.toArray<HTMLElement>(
+                  stackingContainer.querySelectorAll(".item")
+                );
+                const finalEl =
+                  stackingContainer.closest(".service-area-inner")?.querySelector<HTMLElement>(".final");
 
-                items.forEach((item: Element, i: number) => {
-                  const content: HTMLElement | null =
-                    item.querySelector(".body");
-                  const header: HTMLElement | null =
-                    item.querySelector(".header");
+                if (!items.length || !finalEl) return;
+
+                const headerHeights = items.map(
+                  (item) => item.querySelector<HTMLElement>(".header")?.offsetHeight || 0
+                );
+                const totalHeaderHeight = headerHeights.reduce((sum, height) => sum + height, 0);
+                let accumulatedHeight = 0;
+
+                items.forEach((item, i) => {
+                  const content = item.querySelector<HTMLElement>(".body");
+                  const header = item.querySelector<HTMLElement>(".header");
+
                   if (!content || !header) return;
 
-                  const anim = gsap.to(content, {
-                    height: 0,
-                    ease: "none",
+                  const startOffset = accumulatedHeight;
+
+                  const collapseAnim = gsap.timeline({
                     scrollTrigger: {
                       trigger: item,
-                      start: "top " + header.clientHeight * i,
-                      endTrigger: ".final",
-                      end: "top " + header.clientHeight * items.length,
                       pin: true,
                       pinSpacing: false,
-                      scrub: true,
+                      scrub: 1.2,
+                      start: `top ${startOffset}`,
+                      endTrigger: finalEl,
+                      end: `top ${totalHeaderHeight}`,
+                      anticipatePin: 1,
+                      invalidateOnRefresh: true,
+                    },
+                  })
+                  .to(content, {
+                    height: 0,
+                    opacity: 0.8,
+                    ease: "power1.inOut",
+                    duration: 1,
+                  })
+                  .to(header, {
+                    opacity: 0.6,
+                    scale: 0.98,
+                    ease: "power1.inOut",
+                    duration: 1,
+                  }, 0);
+
+                  accumulatedHeight += headerHeights[i];
+
+                  if (collapseAnim && collapseAnim.scrollTrigger) {
+                    scrollTriggers.push(collapseAnim.scrollTrigger as ScrollTrigger);
+                  }
+                });
+              });
+
+              // Mobile: Simple fade-scale animation (no pinning)
+              mm.add("(max-width: 767px)", () => {
+                const items: Element[] = gsap.utils.toArray(stackingContainer.querySelectorAll(".item"));
+
+                items.forEach((item: Element) => {
+                  const content: HTMLElement | null = item.querySelector(".body");
+
+                  if (!content) return;
+
+                  // Ensure content is visible on mobile
+                  gsap.set(content, {
+                    height: "auto",
+                    opacity: 1,
+                    overflow: "visible",
+                  });
+
+                  // Simple fade-up animation per item
+                  const anim = gsap.from(item, {
+                    opacity: 0,
+                    y: 50,
+                    scale: 0.95,
+                    duration: 0.8,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                      trigger: item,
+                      start: "top 85%",
+                      toggleActions: "play none none none",
                     },
                   });
+
                   if (anim && anim.scrollTrigger) {
                     scrollTriggers.push(anim.scrollTrigger as ScrollTrigger);
                   }

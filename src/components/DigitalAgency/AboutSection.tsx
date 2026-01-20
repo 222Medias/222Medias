@@ -80,24 +80,24 @@ const AboutSection:React.FC<AboutProps> = ({className:updateClass,data:aboutData
             </div>
           </div>
 
-          <div className="counter-wrapper-box fade-anim">
-            <div className="counter-wrapper">
-              {aboutData?.counters?.map((counter:ICounter, index:number) => (
-                <div className="counter-item fade-anim" data-delay={counter?.delay} key={index}>
-                  <span className="number">
-                    <span
-                      className="t-counter-value"
-                      data-value={counter?.value}
-                    >
-                      {counter?.value}
-                    </span>
-                    <span className="counter-suffix">{counter?.suffix}</span>
-                  </span>
-                  <p className="text">{counter?.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          {/*<div className="counter-wrapper-box fade-anim">*/}
+          {/*  <div className="counter-wrapper">*/}
+          {/*    {aboutData?.counters?.map((counter:ICounter, index:number) => (*/}
+          {/*      <div className="counter-item fade-anim" data-delay={counter?.delay} key={index}>*/}
+          {/*        <span className="number">*/}
+          {/*          <span*/}
+          {/*            className="t-counter-value"*/}
+          {/*            data-value={counter?.value}*/}
+          {/*          >*/}
+          {/*            {counter?.value}*/}
+          {/*          </span>*/}
+          {/*          <span className="counter-suffix">{counter?.suffix}</span>*/}
+          {/*        </span>*/}
+          {/*        <p className="text">{counter?.label}</p>*/}
+          {/*      </div>*/}
+          {/*    ))}*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </div>
     </section>

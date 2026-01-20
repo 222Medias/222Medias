@@ -19,7 +19,7 @@ const heroData:HeroData = {
     "Brand Identity",
   ],
   description:
-    "We partner with businesses To drive measurable growth through strategy-led marketing, high-performance websites, and clear execution.",
+    "We partner with growth-focused businesses to create measurable impact. By combining strategy-led marketing, high-performance websites, and disciplined execution, we help brands cut through noise, convert attention into revenue, and scale with confidence.",
   button: {
     text: "Get a Free Consultation",
     url: "/contact",

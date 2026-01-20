@@ -48,13 +48,13 @@ const footerData: FooterData = {
   //   { name: "Digital SEO", href: "#" },
   // ],
   instagramImages: [
-    "/assets/imgs/gallery/image-4.webp",
-    "/assets/imgs/gallery/image-5.webp",
-    "/assets/imgs/gallery/image-6.webp",
-    "/assets/imgs/gallery/image-7.webp",
+    "/assets/imgs/gallery/footer-image1.webp",
+    "/assets/imgs/gallery/footer-image2.webp",
+    "/assets/imgs/gallery/footer-image3.webp",
+    "/assets/imgs/gallery/footer-image4.webp",
   ],
   backgroundImage: "/assets/imgs/gallery/image-8.webp",
-  logo: "/assets/imgs/logo/logo.svg",
+  logo: "/assets/imgs/logo/white-logo.svg",
   socialLinks: [
     { name: "FB", href: "#" },
     { name: "LN", href: "#" },
