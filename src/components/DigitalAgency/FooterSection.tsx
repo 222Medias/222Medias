@@ -15,6 +15,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
       <div className="container">
         <div className="footer-widget-wrapper-box">
           <div className="footer-widget-wrapper">
+            {/* About Us Widget */}
             {/* Newsletter Section */}
             <div className="footer-widget-box newsletter">
               <div className="subscription-box">
@@ -48,14 +49,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
 
             {/* Solutions Links */}
             <div className="footer-widget-box">
-              {/*<h2 className="title">Solutions</h2>*/}
-              {/*<ul className="footer-nav-list">*/}
-              {/*  {footerData?.solutionsLinks?.map((link:IFooterLink, idx:number) => (*/}
-              {/*    <li key={idx}>*/}
-              {/*      <Link href={link?.href || "#"}>{link?.name}</Link>*/}
-              {/*    </li>*/}
-              {/*  ))}*/}
-              {/*</ul>*/}
+              <h2 className="title">Services</h2>
+              <ul className="footer-nav-list">
+                {footerData?.servicesLinks?.map((link:IFooterLink, idx:number) => (
+                  <li key={idx}>
+                    <Link href={link?.href || "#"}>{link?.name}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {/* Company Links */}

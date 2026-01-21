@@ -27,7 +27,7 @@ export const aboutData: AboutData = {
   description:
     "222Medias is a B2B marketing and web solutions agency helping businesses grow through strategy, creativity, and performance-driven execution.",
   ctaText: "Know more",
-  ctaLink: "/digital-agency/about",
+  ctaLink: "/about",
   circleImages: {
     textImg: "/assets/imgs/shape/shape-2.webp",
     iconImg: "/assets/imgs/shape/shape-3.webp",

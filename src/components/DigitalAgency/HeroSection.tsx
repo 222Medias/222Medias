@@ -69,7 +69,7 @@ const HeroSection:React.FC<HeroProps> = ({data:heroData}) => {
         </div>
 
         <div className="section-content-wrapper">
-          <div className="container">
+          {/*<div className="container">*/}
             <div className="section-content section-spacing-bottom">
               {heroData.lines && heroData.lines.length > 0 && (
                 <div className="content-lines">
@@ -129,7 +129,7 @@ const HeroSection:React.FC<HeroProps> = ({data:heroData}) => {
               {/*  )}*/}
               {/*</div>*/}
             </div>
-          </div>
+          {/*</div>*/}
         </div>
       </div>
     </section>

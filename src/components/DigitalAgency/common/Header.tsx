@@ -42,7 +42,7 @@ const headerData: HeaderData = {
     { title: "Contact", href: "/contact" },
   ],
   cta: {
-    href: "/digital-agency/contact",
+    href: "/contact",
     label: "Let’s Connect",
   },
 };

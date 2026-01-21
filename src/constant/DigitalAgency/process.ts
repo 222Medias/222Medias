@@ -18,7 +18,7 @@ const processData:ProcessData = {
     sectionSubtitle: "Our Strategy",
     sectionTitle: "Our work process",
     ctaText: "Contact Us",
-    ctaLink: "/digital-agency/contact",
+    ctaLink: "/contact",
     steps: [
       {
         id: 1,

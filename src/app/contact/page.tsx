@@ -2,9 +2,8 @@ import { ReactElement } from "react";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/DigitalAgency/common/Breadcrumb";
 import ChooseUsSection from "@/components/DigitalAgency/common/ChooseUsSection";
-import ContactMetaSection from "@/components/DigitalAgency/Contact/ContactMetaSection";
 import ContactSection from "@/components/DigitalAgency/Contact/ContactSection";
-import Header from "@/components/DigitalAgency/common/Header";
+import Header from "@/components/DigitalAgency/Header";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 

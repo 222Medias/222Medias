@@ -20,7 +20,7 @@ const infoData:InfoData = {
   title: "In numeric way",
   description:
     "Always striving to bring cutting-edge ideas to life, from the initial concept phase to the final launch.",
-  contactLink: "/digital-agency/contact",
+  contactLink: "/contact",
   stats: [
     { number: 47, label: "Trusted clients" },
     { number: 75, label: "Total projects" },

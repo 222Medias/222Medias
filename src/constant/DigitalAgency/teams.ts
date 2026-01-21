@@ -20,17 +20,17 @@ export interface TeamData {
 
 const teamData: TeamData = {
   section: {
-    subtitle: "Our Team Members",
-    title: "Meet our professionals",
-    buttonText: "All Members",
-    buttonUrl: "/digital-agency/team",
+    subtitle: "Our Approach",
+    title: "How We Create Impact",
+    buttonText: "Know More About Us",
+    buttonUrl: "/contact",
   },
   members: [
     {
       id: 1,
       number: "01",
-      name: "Berrymen Wills",
-      post: "CEO/ FOUNDER",
+      name: "Every project starts with understanding your business, market, and goals.",
+      post: "Strategy First",
       image: "/assets/imgs/team/team-1.webp",
       shape: "/assets/imgs/shape/shape-9.webp",
       isActive: false,
@@ -38,8 +38,8 @@ const teamData: TeamData = {
     {
       id: 2,
       number: "02",
-      name: "Emilly Mayore",
-      post: "UI/UX DESIGNER",
+      name: "Design, development, and marketing aligned to drive real outcomes.",
+      post: "Execution with Purpose",
       image: "/assets/imgs/team/team-2.webp",
       shape: "/assets/imgs/shape/shape-9.webp",
       isActive: true,
@@ -47,8 +47,8 @@ const teamData: TeamData = {
     {
       id: 3,
       number: "03",
-      name: "Nelson Scott",
-      post: "WEB DESIGNER",
+      name: "We track performance, refine continuously, and scale what works.",
+      post: "Optimize & Scale",
       image: "/assets/imgs/team/team-3.webp",
       shape: "/assets/imgs/shape/shape-9.webp",
       isActive: false,

@@ -16,7 +16,7 @@ export interface FooterData {
   title: string;
   subtitle: string;
   companyLinks: IFooterLink[];
-  // solutionsLinks: IFooterLink[];
+  servicesLinks: IFooterLink[];
   instagramImages: string[];
   // copyright: {
   //   year: number | string;
@@ -40,13 +40,12 @@ const footerData: FooterData = {
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
   ],
-  // solutionsLinks: [
-  //   { name: "Our Services", href: "#" },
-  //   { name: "Design", href: "#" },
-  //   { name: "Development", href: "#" },
-  //   { name: "Marketing", href: "#" },
-  //   { name: "Digital SEO", href: "#" },
-  // ],
+  servicesLinks: [
+    { name: "B2B Marketing", href: "/services" },
+    { name: "Web Solutions", href: "/services" },
+    { name: "Branding", href: "/services" },
+    { name: "Social Media Solutions", href: "/services" },
+  ],
   instagramImages: [
     "/assets/imgs/gallery/footer-image1.webp",
     "/assets/imgs/gallery/footer-image2.webp",

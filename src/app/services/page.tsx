@@ -7,7 +7,7 @@ import InfoSection from "@/components/DigitalAgency/InfoSection";
 import ChooseUsSection from "@/components/DigitalAgency/common/ChooseUsSection";
 import TestimonialSection from "@/components/DigitalAgency/TestimonialSection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
-import Header from "@/components/DigitalAgency/common/Header";
+import Header from "@/components/DigitalAgency/Header";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 
 // all data

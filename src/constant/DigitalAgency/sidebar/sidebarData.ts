@@ -57,7 +57,7 @@ const sidebar: SidebarData = {
     {
       label: "Pages",
       children: [
-        { label: "About Us", href: "/digital-agency/about" },
+        { label: "About Us", href: "/about" },
         {
           label: "Service",
           children: [
@@ -90,7 +90,7 @@ const sidebar: SidebarData = {
           ],
         },
         { label: "FAQ", href: "/digital-agency/faq" },
-        { label: "Contact", href: "/digital-agency/contact" },
+        { label: "Contact", href: "/contact" },
       ],
     },
     {
@@ -103,7 +103,7 @@ const sidebar: SidebarData = {
         },
       ],
     },
-    { label: "Contact Us", href: "/digital-agency/contact" },
+    { label: "Contact Us", href: "/contact" },
   ],
   closeIcon: "fas fa-times",
   title: "Hello There!",
@@ -111,7 +111,7 @@ const sidebar: SidebarData = {
     "We offer comprehensive range of services to help your business thrive.",
   cta: {
     text: "Let’s Connect",
-    href: "/digital-agency/contact",
+    href: "/contact",
   },
   ctaIcon: "fa-solid fa-arrow-right",
   gallery: [

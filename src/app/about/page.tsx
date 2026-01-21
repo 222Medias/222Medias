@@ -8,7 +8,7 @@ import TeamsSection from "@/components/DigitalAgency/TeamsSection";
 import TextSliderSection from "@/components/DigitalAgency/TextSliderSection";
 import BlogSection from "@/components/DigitalAgency/BlogSection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
-import Header from "@/components/DigitalAgency/common/Header";
+import Header from "@/components/DigitalAgency/Header";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 
 // component data

@@ -42,7 +42,7 @@ const serviceData = {
         number: "(02)",
         image: "/assets/imgs/shape/shape-7.webp",
         description: "Lead generation, paid campaigns, and funnel optimization.",
-        detailsLink: "/digital-agency/contact",
+        detailsLink: "/contact",
         items: [
           "1. Paid Advertising Campaigns",
           "2. Lead Generation & Conversion Optimization",
