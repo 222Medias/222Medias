@@ -16,7 +16,7 @@ export interface IChooseUs {
 const chooseUsData:IChooseUs = {
   subtitle: "Why Choose Us",
   title: "Why Businesses Work With 222Medias",
-  image: "/assets/imgs/gallery/image-20.webp",
+  image: "/assets/imgs/gallery/about-home.jpg",
   features: [
     {
       id: 1,

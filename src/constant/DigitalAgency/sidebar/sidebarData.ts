@@ -43,66 +43,10 @@ const sidebar: SidebarData = {
   menus: [
     {
       label: "Home",
-      children: [
-        { label: "Creative Agency", href: "/creative-agency" },
-        { label: "Design Agency", href: "/design-agency" },
-        { label: "Digital Agency", href: "/digital-agency" },
-        { label: "AI Agency", href: "/ai-agency" },
-        { label: "Marketing Agency", href: "/marketing-agency" },
-        { label: "Digital Collective", href: "/digital-collective" },
-        { label: "Marketing Agency V2", href: "/marketing-agency-v2" },
-        { label: "Financial Advisor", href: "/financial-advisor" },
-      ],
+        href: "/",
     },
-    {
-      label: "Pages",
-      children: [
-        { label: "About Us", href: "/about" },
-        {
-          label: "Service",
-          children: [
-            { label: "Services", href: "/digital-agency/services" },
-            {
-              label: "Service Details",
-              href: "/digital-agency/service-details",
-            },
-          ],
-        },
-        {
-          label: "Portfolio Pages",
-          children: [
-            { label: "Portfolio", href: "/digital-agency/portfolio" },
-            { label: "Portfolio 02", href: "/digital-agency/portfolio-02" },
-            { label: "Portfolio 03", href: "/digital-agency/portfolio-03" },
-            {
-              label: "Portfolio Details",
-              href: "/digital-agency/portfolio-details",
-            },
-          ],
-        },
-        { label: "Team", href: "/digital-agency/team" },
-        {
-          label: "Blog Pages",
-          children: [
-            { label: "Blog", href: "/digital-agency/blog" },
-            { label: "Blog Grid", href: "/digital-agency/blog-grid" },
-            { label: "Blog Details", href: "/digital-agency/blog-details" },
-          ],
-        },
-        { label: "FAQ", href: "/digital-agency/faq" },
-        { label: "Contact", href: "/contact" },
-      ],
-    },
-    {
-      label: "Portfolio",
-      children: [
-        { label: "Portfolio", href: "/digital-agency/portfolio" },
-        {
-          label: "Portfolio Details",
-          href: "/digital-agency/portfolio-details",
-        },
-      ],
-    },
+    {label: "Services", href: "/services" },
+    { label: "About Us", href: "/about" },
     { label: "Contact Us", href: "/contact" },
   ],
   closeIcon: "fas fa-times",
@@ -130,7 +74,7 @@ const sidebar: SidebarData = {
     { label: "IN", href: "#" },
     { label: "BE", href: "#" },
   ],
-  footerLogo: "/assets/imgs/logo/logo-6.png",
+  footerLogo: "/assets/imgs/logo/logo.svg",
 };
 
 export default sidebar;

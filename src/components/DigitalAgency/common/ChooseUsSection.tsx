@@ -10,7 +10,7 @@ const ChooseUsSection:React.FC<ChooseUsProps> = ({chooseUSTwo,data:chooseUsData}
 
   return (
     <section className={chooseUSTwo ? 'choose-area-2': 'choose-area'}>
-      <div className="container">
+      <div className="container mb-5">
         <div className={chooseUSTwo ? 'choose-area-2-inner section-spacing' : 'choose-area-inner section-spacing-top'}>
           <div className="section-content-wrapper">
             <div className="choose-thumb fade-anim" data-direction="left">

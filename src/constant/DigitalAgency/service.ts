@@ -26,7 +26,7 @@ const serviceData = {
         id: 1,
         title: "Marketing Strategy",
         number: "(01)",
-        image: "/assets/imgs/shape/shape-6.webp",
+        image: "/assets/imgs/shape/symbol1.svg",
         description: "Research, positioning, messaging, and growth planning.",
         detailsLink: "/contact",
         items: [
@@ -40,7 +40,7 @@ const serviceData = {
         id: 2,
         title: "Performance Marketing",
         number: "(02)",
-        image: "/assets/imgs/shape/shape-7.webp",
+        image: "/assets/imgs/shape/symbol2.svg",
         description: "Lead generation, paid campaigns, and funnel optimization.",
         detailsLink: "/contact",
         items: [
@@ -54,7 +54,7 @@ const serviceData = {
         id: 3,
         title: "Web Design & Development",
         number: "(03)",
-        image: "/assets/imgs/shape/shape-8.webp",
+        image: "/assets/imgs/shape/symbol6.svg",
         description: "Modern, fast, conversion-focused marketing websites.",
         detailsLink: "/contact",
         items: [
@@ -68,7 +68,7 @@ const serviceData = {
         id: 4,
         title: "Branding & Creative",
         number: "(04)",
-        image: "/assets/imgs/shape/shape-8.webp",
+        image: "/assets/imgs/shape/symbol5.svg",
         description: "Brand identity systems, campaign design, and digital assets.",
         detailsLink: "/contact",
         items: [

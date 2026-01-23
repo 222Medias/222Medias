@@ -33,42 +33,47 @@ import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Averto - Creative Digital Agency NextJS Template",
+  title: {
+    default: "222medias - Marketing & Web Solutions",
+    template: "%s | 222Medias",
+  },
   description:
-    "Averto is a modern and responsive Next.js template designed for agencies and businesses. Featuring a sleek design, fast performance, and SEO optimization, Averto provides a perfect foundation for building a high-quality website.",
+    "222Medias is a creative digital agency specializing in brand strategy, web design, and marketing solutions. We help brands look better, communicate clearer, and grow faster.",
   keywords: [
-    "NextJS template",
-    "agency website template",
-    "business website template",
-    "responsive web design",
-    "SEO optimized template",
-    "modern NextJS template",
-    "agency website design",
-    "high-performance website template",
-    "web development",
-    "business template NextJS",
-    "Averto template",
-    "digital agency template",
-    "corporate website template",
-    "startup website template",
-    "clean website design",
-    "modern business template",
-    "customizable NextJS template",
-    "business landing page template",
-    "professional web design template",
-    "NextJS portfolio template",
-    "creative agency website template",
-    "landing page template",
-    "NextJS website themes",
-    "responsive business templates",
-    "NextJS for agencies",
-    "SEO friendly web template",
-    "business site design template",
-    "fast website template",
+    "digital agency",
+    "brand strategy",
+    "web design",
+    "marketing strategy",
+    "creative content",
+    "UI/UX design",
+    "SEO",
+    "performance marketing",
+    "222Medias",
   ],
-  creator: "PixaVation",
-  other: {
-    developer: "PixaVation",
+  creator: "222Medias",
+  openGraph: {
+    title: "222medias - Marketing & Web Solutions",
+    description:
+      "We help brands look better, communicate clearer, and grow faster through strategic branding, web design, and marketing.",
+    url: "https://www.222medias.com", // Replace with your actual domain
+    siteName: "222Medias",
+    images: [
+      {
+        url: "/og-image.png", // Create and place this image in your /public folder
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "222medias - Marketing & Web Solutions",
+    description:
+      "Transform your brand with our expert strategy, design, and marketing services.",
+    creator: "@222Medias", // Replace with your Twitter handle
+    images: ["/og-image.png"], // Must be an absolute URL in production
   },
 };
 

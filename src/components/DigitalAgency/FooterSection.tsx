@@ -1,110 +1,84 @@
+"use client";
+import React from "react";
 import Link from "next/link";
-import {FooterData, IFooterLink} from "@/constant/DigitalAgency/footer";
+import footerData from "@/constant/DigitalAgency/footer";
 
-interface FooterSectionProps {
-  data: FooterData;
-}
+const FooterSection = () => {
+  const { bgImage, widgets, preCopyrightText, copyrightText, logo } =
+    footerData;
 
-const FooterSection: React.FC<FooterSectionProps> = ({ data: footerData }) => {
   return (
     <footer className="footer-area">
       <div className="area-bg">
-        <img src={footerData?.backgroundImage} alt="footer background" />
+        <img src={bgImage} alt="Footer Background" />
       </div>
-
       <div className="container">
         <div className="footer-widget-wrapper-box">
           <div className="footer-widget-wrapper">
-            {/* About Us Widget */}
-            {/* Newsletter Section */}
-            <div className="footer-widget-box newsletter">
-              <div className="subscription-box">
-                <div className="title-wrapper">
-                  {/*<h2 className="section-title">{footerData?.title}</h2>*/}
-                  <div className="footer-logo">
-                    <Link href="/">
-                      <img src={footerData?.logo} alt="site logo" />
-                    </Link>
-                  </div>
+            {widgets.map((widget, index) => (
+              <div className="footer-widget-box" key={index}>
+                <h4 className="title">{widget.title}</h4>
+                <div className="widget-content">
+                  {widget.type === "contact" && (
+                    <>
+                      <a href={`mailto:${widget.email}`} className="contact-link">
+                        {widget.email}
+                      </a>
+                      <p className="location">{widget.location}</p>
+                      {widget.cta && (
+                        <Link href={widget.cta.href} className="t-btn-primary">
+                          {widget.cta.label}
+                        </Link>
+                      )}
+                    </>
+                  )}
+                  {widget.type === "subscription" && (
+                    <div className="subscription-box">
+                      <p className="text">{widget.description}</p>
+                      <form className="subscribe-form">
+                        <div className="input-field">
+                          <input
+                            type="email"
+                            placeholder={widget.placeholder}
+                          />
+                          <button type="submit" className="t-btn-primary">
+                            {widget.buttonText}
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  )}
+                  {widget.type === "links" && widget.links && (
+                    <ul className="footer-nav-list">
+                      {widget.links.map((link, linkIndex) => (
+                        <li key={linkIndex}>
+                          <Link href={link.href}>{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <div className="text-wrapper">
-                  <p className="text">{footerData?.subtitle}</p>
-                </div>
-                {/*<div className="subscribe-form">*/}
-                {/*  <div className="input-field">*/}
-                {/*    <input*/}
-                {/*      type="email"*/}
-                {/*      placeholder={footerData?.newsletter?.placeholder}*/}
-                {/*    />*/}
-                {/*    <button*/}
-                {/*      type="submit"*/}
-                {/*      className="subscribe-btn t-btn-primary bg-active"*/}
-                {/*    >*/}
-                {/*      {footerData?.newsletter?.buttonText}*/}
-                {/*    </button>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
               </div>
-            </div>
-
-            {/* Solutions Links */}
-            <div className="footer-widget-box">
-              <h2 className="title">Services</h2>
-              <ul className="footer-nav-list">
-                {footerData?.servicesLinks?.map((link:IFooterLink, idx:number) => (
-                  <li key={idx}>
-                    <Link href={link?.href || "#"}>{link?.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company Links */}
-            <div className="footer-widget-box">
-              <h2 className="title">Company</h2>
-              <ul className="footer-nav-list">
-                {footerData?.companyLinks?.map((link:IFooterLink, idx:number) => (
-                  <li key={idx}>
-                    <Link href={link?.href || "#"}>{link?.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Instagram Images */}
-            <div className="footer-widget-box">
-              <h2 className="title">Instagram</h2>
-              <div className="instagram-posts">
-                {footerData?.instagramImages?.map((src:string, idx:number) => (
-                  <Link href="#" key={idx}>
-                    <img src={src} alt={`Instagram ${idx + 1}`} />
-                  </Link>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-
-      {/* Copyright */}
       <div className="copyright-area">
         <div className="container">
           <div className="copyright-area-inner">
-            <div className="copyright-text">
-              {/*<p className="text">*/}
-              {/*  Copyright © {footerData?.copyright?.year}{" "}*/}
-              {/*  <Link href={footerData?.copyright?.link}>*/}
-              {/*    {footerData?.copyright?.text}*/}
-              {/*  </Link>*/}
-              {/*  . All rights reserved.*/}
-              {/*</p>*/}
-            </div>
-            <div className="social-links">
-              {footerData?.socialLinks?.map((link:IFooterLink, idx:number) => (
-                <Link href={link?.href || "#"} key={idx}>
-                  {link?.name}
+            <div className="copyright-content">
+              <div className="footer-logo">
+                <Link href={logo.href}>
+                  {/* FIX: Use an <img> tag and get the 'src' from the imported asset object */}
+                  <img src={logo.src} alt={logo.alt} />
                 </Link>
-              ))}
+              </div>
+            </div>
+            <div className="copyright-text">
+              <p>{copyrightText}</p>
+            </div>
+            <div className="pre-copyright-text">
+              <p>{preCopyrightText}</p>
             </div>
           </div>
         </div>

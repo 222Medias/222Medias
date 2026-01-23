@@ -750,7 +750,8 @@
   bottom: 50px;
   right: 0;
   z-index: -1;
-  opacity: 60%;
+  opacity: 15%;
+  filter: grayscale(1);
 
   @media #{$lg} {
     bottom: 35px;
@@ -1723,21 +1724,24 @@
   }
 
   .footer-widget-wrapper {
-    display: grid;
-    gap: 30px 50px;
-    grid-template-columns: 470px auto auto 254px;
+    display: flex;
+    gap: 40px ;
+    //grid-template-columns: 470px auto auto 254px;
     justify-content: space-between;
+
+    //set 2child to max width as 200px on desktop
+    @media (min-width: 1200px) {
+      & > :nth-child(2) {
+        max-width: 400px;
+      }
+    }
 
     @media #{$lg} {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media #{$sm} {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media #{$xs} {
-      grid-template-columns: 1fr;
+    @media #{$md} {
+      flex-direction: column;
     }
   }
 
@@ -1753,6 +1757,32 @@
 
       @media #{$lg} {
         font-size: 22px;
+      }
+    }
+
+    .widget-content {
+      margin-top: 25px;
+
+      .contact-link {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--white);
+        margin-bottom: 15px;
+
+        &:hover {
+          color: var(--action);
+        }
+      }
+
+      .location {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--white);
+        opacity: 0.74;
+        margin-bottom: 20px;
       }
     }
 
@@ -1883,6 +1913,7 @@
   }
 
   .copyright-text {
+    text-align: center;
     @media #{$md} {
       order: 3;
     }
@@ -2011,6 +2042,8 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.14);
       padding-bottom: 9px;
     }
+
+
   }
 
   .info-box {
@@ -2613,7 +2646,7 @@
   }
 
   .section-title {
-    font-size: 180px;
+    font-size: 120px;
     font-weight: 600;
     line-height: 0.83;
     letter-spacing: -0.01em;
@@ -4503,7 +4536,7 @@
 }
 
 .about-area.page-about {
-  background-color: var(--white);
+  background-color: var(--black);
 
   .counter-wrapper-box {
     margin-bottom: 14px;
@@ -6061,16 +6094,19 @@
     }
 
     @media #{$xs} {
-      font-size: 38px;
+      font-size: 28px;
     }
 
     img {
+      width: 60px;
+      scale: 1;
       @media #{$lg} {
         scale: 0.8;
       }
 
       @media #{$md} {
         scale: 0.7;
+        width: 50px;
       }
 
       @media #{$xs} {
@@ -6086,6 +6122,10 @@
     color: var(--white);
     opacity: 0.7;
     max-width: 478px;
+
+    @media #{$md} {
+      font-size: 15px;
+    }
   }
 
   .service-list {
@@ -6114,6 +6154,9 @@
 
       @media #{$xl} {
         font-size: 20px;
+      }
+      @media #{$md} {
+        font-size: 14px;
       }
 
       &:hover {
@@ -7531,6 +7574,37 @@
     }
   }
 }
+
+
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .includes-list {
+    margin-bottom: 30px;
+
+    strong {
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+
+      li {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 8px;
+      }
+    }
+  }
 
 .work-box-1 {
   display: grid;
@@ -9350,6 +9424,18 @@
 
     .btn-wrapper {
       margin-bottom: 5px;
+
+      .t-btn-primary {
+        background-color: var(--action);
+        border-color: var(--action);
+        color: var(--white);
+      }
+
+      .t-btn-circle {
+        background-color: var(--action);
+        border-color: var(--action);
+        color: var(--white);
+      }
     }
   }
 
@@ -9425,6 +9511,7 @@
       color: var(--white);
     }
   }
+
 
   .thumb {
     position: relative;
@@ -11070,6 +11157,18 @@
 
     .btn-wrapper {
       margin-bottom: 5px;
+
+      .t-btn-primary {
+        background-color: var(--action);
+        border-color: var(--action);
+        color: var(--white);
+      }
+
+      .t-btn-circle {
+        background-color: var(--action);
+        border-color: var(--action);
+        color: var(--white);
+      }
     }
   }
 
@@ -13502,28 +13601,28 @@
   }
 
   .section-title {
-    font-size: 76px;
+    font-size: 60px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.2;
     max-width: 760px;
     color: var(--white);
 
     @media #{$xxl} {
-      font-size: 56px;
+      font-size: 46px;
       max-width: 560px;
     }
 
     @media #{$lg} {
-      font-size: 48px;
+      font-size: 38px;
     }
 
     @media #{$md} {
-      font-size: 42px;
+      font-size: 32px;
       max-width: 460px;
     }
 
     @media #{$sm} {
-      font-size: 36px;
+      font-size: 26px;
     }
 
     @media #{$xs} {

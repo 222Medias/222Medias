@@ -5,7 +5,6 @@ import ProcessSection from "@/components/DigitalAgency/ProcessSection";
 import ServiceSection from "@/components/DigitalAgency/ServiceSection";
 import InfoSection from "@/components/DigitalAgency/InfoSection";
 import ChooseUsSection from "@/components/DigitalAgency/common/ChooseUsSection";
-import TestimonialSection from "@/components/DigitalAgency/TestimonialSection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import Header from "@/components/DigitalAgency/Header";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
@@ -15,53 +14,40 @@ import processData from "@/constant/DigitalAgency/process";
 import serviceData from "@/constant/DigitalAgency/service";
 import infoData from "@/constant/DigitalAgency/info";
 import chooseUsData from "@/constant/DigitalAgency/common/choose-us";
-import footerData from "@/constant/DigitalAgency/footer";
 
 export const metadata: Metadata = {
-  title: "Services || Averto - Creative Digital Agency NextJS Template",
+  title: "Our Services",
   description:
-    "Showcase your agency’s wide range of services with the Averto Services template. Designed to present offerings clearly and attractively, optimized for performance and SEO in Next.js.",
+    "Explore the services offered by 222Medias. We specialize in Brand Strategy & Identity, Web & UI Experience, and Marketing & Growth to help your business succeed.",
   keywords: [
-    "Averto services page",
-    "NextJS services template",
-    "agency services overview",
-    "service offerings",
-    "responsive services layout",
-    "SEO optimized services page",
+    "brand strategy services",
+    "web design and development",
+    "marketing and growth strategy",
+    "UI/UX design services",
+    "creative content systems",
     "digital agency services",
-    "startup services showcase",
-    "professional service presentation",
-    "service features",
-    "business services template",
-    "modern services page",
   ],
-  creator: "PixaVation",
-  other: {
-    developer: "PixaVation",
-    section: "Services Page",
-  },
 };
 
-const Home = (): ReactElement => {
+const ServicesPage = (): ReactElement => {
   return (
     <div className="body-wrapper body-inner-page">
       <Header />
       <SmoothScroll>
         <main>
           <Breadcrumb
-            title="222Medias"
-            subTitle="Services"
-            pageName="AGENCY SERVICES"
+            title="SERVICES"
+            subTitle="What We Do"
+            pageName="OUR SERVICES"
           />
           <ProcessSection className="page-services" data={processData} />
           <ServiceSection data={serviceData} />
           <InfoSection type={2} data={infoData} />
           <ChooseUsSection data={chooseUsData} />
-          <TestimonialSection pageService={true} />
         </main>
-        <FooterSection data={footerData} />
+        <FooterSection />
       </SmoothScroll>
     </div>
   );
 };
-export default Home;
+export default ServicesPage;

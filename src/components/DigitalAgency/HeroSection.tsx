@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import { HeroData } from "@/constant/DigitalAgency/hero";
+import VideoSection from "@/components/DigitalAgency/About/VideoSection";
+import videoData from "@/constant/DigitalAgency/About/video";
 interface HeroProps {
   data: HeroData;
 }
@@ -79,20 +80,22 @@ const HeroSection:React.FC<HeroProps> = ({data:heroData}) => {
                 </div>
               )}
 
-              {heroData?.videoUrl && (
-                <div
-                  className="hero-thumb fade-anim"
-                  data-direction="left"
-                  data-delay="0.60"
-                  data-duration="2"
-                  data-offset="100"
-                  suppressHydrationWarning={true}
-                >
-                  <video loop muted autoPlay playsInline>
-                    <source src={heroData?.videoUrl} type="video/mp4" />
-                  </video>
-                </div>
-              )}
+                <VideoSection data={videoData}/>
+
+                {/*{heroData?.videoUrl && (*/}
+              {/*  <div*/}
+              {/*    className="hero-thumb fade-anim"*/}
+              {/*    data-direction="left"*/}
+              {/*    data-delay="0.60"*/}
+              {/*    data-duration="2"*/}
+              {/*    data-offset="100"*/}
+              {/*    suppressHydrationWarning={true}*/}
+              {/*  >*/}
+              {/*    <video loop muted autoPlay playsInline>*/}
+              {/*      <source src={heroData?.videoUrl} type="video/mp4" />*/}
+              {/*    </video>*/}
+              {/*  </div>*/}
+              {/*)}*/}
 
               {/*<div className="hero-content">*/}
               {/*  {heroData?.description && (*/}

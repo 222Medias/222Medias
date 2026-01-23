@@ -8,58 +8,40 @@ import FooterSection from "@/components/DigitalAgency/FooterSection";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 
 // all data
-import footerData from "@/constant/DigitalAgency/footer";
 import contactData from "@/constant/DigitalAgency/Contact/contact";
 import chooseUsData from "@/constant/DigitalAgency/common/choose-us";
 
-export const metadata:Metadata = {
-  title: "Contact || Averto - Creative Digital Agency NextJS Template",
+export const metadata: Metadata = {
+  title: "Contact Us",
   description:
-    "Get in touch with the Averto team. Whether you have questions, project inquiries, or want to collaborate, our contact page makes it easy to connect.",
+    "Ready to start a project or have a question? Contact 222Medias today. Fill out our form, send us an email, or book a call. Let's build something great together.",
   keywords: [
-    "Averto contact page",
-    "NextJS contact template",
-    "agency contact",
-    "business contact page",
-    "get in touch",
-    "contact form NextJS",
+    "contact 222Medias",
+    "get a quote",
+    "book a call",
     "digital agency contact",
-    "startup contact page",
-    "professional contact page",
-    "customer support",
-    "contact details",
-    "business inquiries",
-    "NextJS contact form",
-    "responsive contact page",
-    "contact us",
-    "contact page template",
+    "brand strategy inquiry",
+    "web design contact",
   ],
-  creator: "PixaVation",
-  other: {
-    developer: "PixaVation",
-    section: "Contact Page",
-  },
 };
 
-const Home = (): ReactElement => {
+const ContactPage = (): ReactElement => {
   return (
     <div className="body-wrapper body-inner-page">
       <Header />
       <SmoothScroll>
         <main>
           <Breadcrumb
-            title="AGENCY"
-            subTitle="222Medias"
-            pageName="222Medias CONTACT"
+            title="CONTACT"
+            subTitle="Get in Touch"
+            pageName="CONTACT US"
           />
-          {/*<ContactMetaSection />*/}
-          <ContactSection data={contactData}/>
-          <ChooseUsSection chooseUSTwo={true} data={chooseUsData}/>
+          <ContactSection data={contactData} />
+          <ChooseUsSection chooseUSTwo={true} data={chooseUsData} />
         </main>
-        <FooterSection data={footerData}/>
-
+        <FooterSection />
       </SmoothScroll>
     </div>
   );
 };
-export default Home;
+export default ContactPage;

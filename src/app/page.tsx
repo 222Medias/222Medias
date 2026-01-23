@@ -21,30 +21,7 @@ import workData from "@/constant/DigitalAgency/work";
 import teamData from "@/constant/DigitalAgency/teams";
 import textSliderData from "@/constant/DigitalAgency/textSlider";
 import blogData from "@/constant/DigitalAgency/blog";
-import footerData from "@/constant/DigitalAgency/footer";
 
-export const metadata: Metadata = {
-  title: "222media - Digital Marketing Agency",
-  description:
-    "222media is a premier digital marketing agency focused on business outcomes, clear communication, and scalable solutions. We help businesses grow with strategic digital services.",
-  keywords: [
-    "222media",
-    "digital marketing agency",
-    "marketing agency",
-    "business growth",
-    "digital strategy",
-    "web development",
-    "SEO services",
-    "creative agency",
-    "brand strategy",
-    "marketing solutions",
-  ],
-  creator: "222media",
-  other: {
-    developer: "222media",
-    section: "Home Page",
-  },
-};
 
 const Home = (): ReactElement => {
   return (
@@ -61,7 +38,7 @@ const Home = (): ReactElement => {
           <TextSliderSection data={textSliderData} />
           <BlogSection data={blogData} />
         </main>
-        <FooterSection data={footerData}/>
+        <FooterSection />
       </SmoothScroll>
     </div>
   );

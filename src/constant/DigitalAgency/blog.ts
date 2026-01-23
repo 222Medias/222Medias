@@ -28,7 +28,7 @@ const blogData:BlogData = {
     {
       id: 1,
       tag: "BRANDING",
-      image: "/assets/imgs/blog/blog-1.webp",
+      image: "/assets/imgs/blog/blog1.jpg",
       date: "Growing Businesses",
       title: "Companies ready to scale their marketing efforts.",
       url: "/digital-agency/blog-details",
@@ -36,7 +36,7 @@ const blogData:BlogData = {
     {
       id: 2,
       tag: "DESIGN",
-      image: "/assets/imgs/blog/blog-2.webp",
+      image: "/assets/imgs/blog/blog2.jpg",
       date: "Service-Based Brands",
       title: "Professional services that rely on trust and visibility.",
       url: "/contact",
@@ -44,7 +44,7 @@ const blogData:BlogData = {
     {
       id: 3,
       tag: "BRANDING",
-      image: "/assets/imgs/blog/blog-3.webp",
+      image: "/assets/imgs/blog/blog3.jpg",
       date: "Marketing Teams",
       title: "Teams that need a reliable execution partner.",
       url: "/contact",

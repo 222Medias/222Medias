@@ -54,13 +54,13 @@ const Sidebar = ({
                   <i className={sidebarData?.ctaIcon}></i>
                 </Link>
                 <Link
-                  className="t-btn t-btn-primary"
+                  className="t-btn t-btn-primary text-black"
                   href={sidebarData?.cta?.href}
                 >
                   {sidebarData?.cta?.text}
                 </Link>
                 <Link
-                  className="t-btn t-btn-circle"
+                  className="t-btn t-btn-circle text-black"
                   href={sidebarData?.cta?.href}
                 >
                   <i className={sidebarData?.ctaIcon}></i>
