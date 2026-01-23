@@ -37,7 +37,7 @@ const footerData: FooterData = {
       type: "contact",
       title: "Get in Touch",
       email: "hello@222medias.com",
-      location: "📍 Serving clients worldwide",
+      location: "Serving clients worldwide",
       cta: { label: "Book a Call", href: "/contact" },
     },
     {

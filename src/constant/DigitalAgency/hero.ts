@@ -24,7 +24,7 @@ const heroData:HeroData = {
     text: "Get a Free Consultation",
     url: "/contact",
   },
-  videoUrl:"/videos/hero-video.mp4",
+  videoUrl:"/videos/hero-video.webm",
   shapeImg: "/assets/imgs/shape/symbol3.svg",
   lines: ["line-1", "line-2", "line-3", "line-4"],
 };

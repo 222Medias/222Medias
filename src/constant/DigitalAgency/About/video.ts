@@ -4,7 +4,7 @@ export interface IVideoData {
   title: string;
 }
 const videoData: IVideoData = {
-  videoUrl: '/videos/hero-video.mp4',
+  videoUrl: '/videos/hero-video.webm',
   subtitle: 'as a creative studio',
   title: 'Driving measurable growth with strategy-led marketing, fast websites, and focused execution.'
 };
