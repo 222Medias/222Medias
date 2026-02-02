@@ -4,6 +4,7 @@ import { IVideoData } from "@/constant/DigitalAgency/About/video";
 import Typewriter from "typewriter-effect";
 import heroData from "@/constant/DigitalAgency/hero";
 import Header from "@/components/DigitalAgency/Header";
+import Link from "next/link";
 interface VideoProps {
   data: IVideoData;
 }
@@ -13,6 +14,7 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
   return (
     <section className="video-area fade-anim">
         <Header />
+
         <div className="area-bg">
         <video loop muted autoPlay playsInline>
           <source src={videoUrl} type="video/mp4" />
@@ -73,6 +75,35 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
                           </div>
                       )}
                   </div>
+              </div>
+
+              <div className="hero-content">
+                  {heroData?.description && (
+                      <div className="text-wrapper">
+                          <p className="text word-anim" data-stagger="0.1" suppressHydrationWarning={true}>
+                              {heroData?.description}
+                          </p>
+                      </div>
+                  )}
+
+                  {heroData?.button?.text && heroData?.button?.url && (
+                      <div className="btn-wrapper fade-anim" data-delay="0.60" suppressHydrationWarning={true}>
+                          <div className="d-flex justify-content-center align-items-center">
+                              <Link
+                                  href={heroData?.button?.url}
+                                  className="t-btn t-btn-primary"
+                              >
+                                  {heroData?.button?.text}
+                              </Link>
+                              <Link
+                                  href={heroData?.button?.url}
+                                  className="t-btn t-btn-circle"
+                              >
+                                  <i className="fa-solid fa-arrow-right"></i>
+                              </Link>
+                          </div>
+                      </div>
+                  )}
               </div>
             {/*<div className="section-title-wrapper">*/}
             {/*  <div className="subtitle-wrapper fade-anim">*/}

@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { HeroData } from "@/constant/DigitalAgency/hero";
 import VideoSection from "@/components/DigitalAgency/About/VideoSection";
 import videoData from "@/constant/DigitalAgency/About/video";
+import Link from "next/link";
 interface HeroProps {
   data: HeroData;
 }
@@ -96,41 +97,6 @@ const HeroSection:React.FC<HeroProps> = ({data:heroData}) => {
               {/*    </video>*/}
               {/*  </div>*/}
               {/*)}*/}
-
-              {/*<div className="hero-content">*/}
-              {/*  {heroData?.description && (*/}
-              {/*    <div className="text-wrapper">*/}
-              {/*      <p className="text word-anim" data-stagger="0.1" suppressHydrationWarning={true}>*/}
-              {/*        {heroData?.description}*/}
-              {/*      </p>*/}
-              {/*    </div>*/}
-              {/*  )}*/}
-
-              {/*  {heroData?.button?.text && heroData?.button?.url && (*/}
-              {/*    <div className="btn-wrapper fade-anim" data-delay="0.60" suppressHydrationWarning={true}>*/}
-              {/*      <div className="t-btn-group">*/}
-              {/*        <Link*/}
-              {/*          href={heroData?.button?.url}*/}
-              {/*          className="t-btn t-btn-circle"*/}
-              {/*        >*/}
-              {/*          <i className="fa-solid fa-arrow-right"></i>*/}
-              {/*        </Link>*/}
-              {/*        <Link*/}
-              {/*          href={heroData?.button?.url}*/}
-              {/*          className="t-btn t-btn-primary"*/}
-              {/*        >*/}
-              {/*          {heroData?.button?.text}*/}
-              {/*        </Link>*/}
-              {/*        <Link*/}
-              {/*          href={heroData?.button?.url}*/}
-              {/*          className="t-btn t-btn-circle"*/}
-              {/*        >*/}
-              {/*          <i className="fa-solid fa-arrow-right"></i>*/}
-              {/*        </Link>*/}
-              {/*      </div>*/}
-              {/*    </div>*/}
-              {/*  )}*/}
-              {/*</div>*/}
             </div>
           {/*</div>*/}
         </div>

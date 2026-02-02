@@ -151,7 +151,7 @@ const Header = () => {
       <Sidebar isOpen={isOpen} handleSidebar={handleSidebar} />
       <header className="header-area">
         <div className="header-main header-sticky">
-          <div className="container large">
+          <div className="large container">
             <div className="header-area-inner">
               {/* Logo Section */}
               <div className="header-logo">
