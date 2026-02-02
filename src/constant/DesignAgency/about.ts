@@ -19,7 +19,7 @@ const aboutData: AboutData = {
     "Through bold design, captivating visuals, and strategic thinking, we bring these stories to life.",
   image: "/assets/imgs/gallery/image-10.webp",
   link: "/design-agency/about",
-  buttonText: "Know More",
+  buttonText: "Learn More",
   features: [
     {
       icon: "/assets/imgs/icon/icon-8.webp",

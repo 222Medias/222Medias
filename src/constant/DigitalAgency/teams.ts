@@ -22,7 +22,7 @@ const teamData: TeamData = {
   section: {
     subtitle: "Our Approach",
     title: "How We Create Impact",
-    buttonText: "Know More About Us",
+    buttonText: "Learn More About Us",
     buttonUrl: "/contact",
   },
   members: [

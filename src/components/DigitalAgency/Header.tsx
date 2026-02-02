@@ -66,12 +66,6 @@ const headerData: HeaderData = {
           description: "Maintain your presence online with review marketing.",
         },
         {
-          title: "Interactions",
-          href: "/services",
-          icon: "/assets/imgs/icon/services-icons/Interactions.svg",
-          description: "Engage your customers with webchat and texting.",
-        },
-        {
           title: "Logo + Graphic Design",
           href: "/services",
           icon: "/assets/imgs/icon/services-icons/Graphic Design.svg",
@@ -106,46 +100,72 @@ const Header = () => {
       // Mega Menu Logic
       if (item.isMegaMenu && item.children) {
         return (
-          <li key={index} className="menu-item-has-children mega-menu-parent">
-            <Link href={item.href || "#"}>{item.title}</Link>
-            <div className="mega-menu-container">
-              <ul className="mega-menu-grid">
-                {item.children.map((child, i) => (
-                  <li key={i} className="mega-menu-item">
-                    <Link href={child.href || "#"}>
-                      <span className="icon-box">
-                        {child.icon && (
-                          <img src={child.icon} alt={`${child.title} icon`} />
-                        )}
-                      </span>
-                      <div className="content-box">
-                        <span className="title">{child.title}</span>
-                        <p className="description">{child.description}</p>
-                      </div>
+            <li key={index} className="menu-item-has-children mega-menu-parent">
+              <Link href={item.href || "#"}>{item.title}</Link>
+              <div className="mega-menu-container">
+                <div className="mega-menu-wrapper">
+                  {/* Left Side - Menu Items */}
+                  <div className="mega-menu-main">
+                    <div className="mega-menu-header">Services Overview</div>
+                    <ul className="mega-menu-grid">
+                      {item.children.map((child, i) => (
+                          <li key={i} className="mega-menu-item">
+                            <Link href={child.href || "#"}>
+                        <span className="icon-box">
+                          {child.icon && (
+                              <img src={child.icon} alt={`${child.title} icon`} />
+                          )}
+                        </span>
+                              <div className="content-box">
+                                <span className="title">{child.title}</span>
+                                <p className="description">{child.description}</p>
+                              </div>
+                            </Link>
+                          </li>
+                      ))}
+                    </ul>
+
+                    {/* View All Services Button */}
+                    <div className="mega-menu-footer">
+                      <Link href="/services" className="view-all-btn">
+                        View All Services
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Right Side - CTA Card */}
+                  <div className="mega-menu-cta">
+                    <h3>Schedule a Consultation</h3>
+                    <Link href="/contact" className="cta-button">
+                      Schedule now
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
                     </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
+                  </div>
+                </div>
+              </div>
+            </li>
         );
       }
 
       // Standard Dropdown
       return (
-        <li
-          key={index}
-          className={item?.children ? "menu-item-has-children" : ""}
-        >
-          <Link href={item?.href || "#0"}>{item?.title}</Link>
-          {item?.children && (
-            <ul className="dp-menu">{renderMenu(item?.children)}</ul>
-          )}
-        </li>
+          <li
+              key={index}
+              className={item?.children ? "menu-item-has-children" : ""}
+          >
+            <Link href={item?.href || "#0"}>{item?.title}</Link>
+            {item?.children && (
+                <ul className="dp-menu">{renderMenu(item?.children)}</ul>
+            )}
+          </li>
       );
     });
   };
-
   return (
     <>
       <Sidebar isOpen={isOpen} handleSidebar={handleSidebar} />

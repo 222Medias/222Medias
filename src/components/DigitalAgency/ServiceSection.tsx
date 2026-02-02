@@ -55,11 +55,10 @@ const ServiceSection:React.FC<ServiceProps> = ({data:serviceData}) => {
                     <div className="btn-wrapper">
                       <Link href={srv?.detailsLink || "#"} className="t-btn">
                         <span>Show Details</span>
-                        <svg viewBox="0 0 123 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fillRule="evenodd" clipRule="evenodd"
-                            d="M7.67648 102.817L94.6863 16.8148H0.999996V0.999997H122V108.409H106V27.9975L18.9902 114L7.67648 102.817Z"
-                            stroke="#AFF42B"
-                          />
+                        <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.06 115.49" style={{ fill: 'none', stroke: '#39b54a', strokeMiterlimit: 10, strokeWidth: '2px' }}>
+                          <g id="Layer_1-2">
+                            <path d="M1,1h121.06v107.33h-16.61V27.83L19.21,114.08l-10.86-10.9L95.55,16.65H1V1Z" />
+                          </g>
                         </svg>
                       </Link>
                     </div>

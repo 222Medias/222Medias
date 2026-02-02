@@ -87,18 +87,31 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
                   )}
 
                   {heroData?.button?.text && heroData?.button?.url && (
-                      <div className="btn-wrapper fade-anim" data-delay="0.60" suppressHydrationWarning={true}>
-                          <div className="d-flex justify-content-center align-items-center">
-                              <Link
-                                  href={heroData?.button?.url}
-                                  className="t-btn t-btn-primary"
-                              >
+                      // <div className="btn-wrapper fade-anim" data-delay="0.60" suppressHydrationWarning={true}>
+                      //     <div className="d-flex justify-content-center align-items-center">
+                      //         <Link
+                      //             href={heroData?.button?.url}
+                      //             className="t-btn t-btn-primary"
+                      //         >
+                      //             {heroData?.button?.text}
+                      //         </Link>
+                      //         <Link
+                      //             href={heroData?.button?.url}
+                      //             className="t-btn t-btn-circle"
+                      //         >
+                      //             <i className="fa-solid fa-arrow-right"></i>
+                      //         </Link>
+                      //     </div>
+                      // </div>
+                      <div className="btn-wrapper fade-anim">
+                          <div className="t-btn-group">
+                              <Link className="t-btn t-btn-circle" href={heroData?.button?.url || "#"}>
+                                  <i className="fa-solid fa-arrow-right"></i>
+                              </Link>
+                              <Link className="t-btn t-btn-primary" href={heroData?.button?.url || "#"}>
                                   {heroData?.button?.text}
                               </Link>
-                              <Link
-                                  href={heroData?.button?.url}
-                                  className="t-btn t-btn-circle"
-                              >
+                              <Link className="t-btn t-btn-circle" href={heroData?.button?.url || "#"}>
                                   <i className="fa-solid fa-arrow-right"></i>
                               </Link>
                           </div>
