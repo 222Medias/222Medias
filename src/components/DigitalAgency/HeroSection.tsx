@@ -12,73 +12,73 @@ interface HeroProps {
 const HeroSection:React.FC<HeroProps> = ({data:heroData}) => {
   return (
     <section className="hero-area">
-      <div className="hero-area-inner section-spacing-top">
+      <div className="hero-area-inner">
         <div className="container">
-          <div className="section-header">
-            <div className="section-title-wrapper">
-              {heroData?.shapeImg && (
-                <div
-                  className="shape-1 fade-anim"
-                  data-direction="top"
-                  data-ease="bounce"
-                  data-delay="0.90"
-                  data-offset="100"
-                  suppressHydrationWarning={true}
-                >
-                  <img src={heroData?.shapeImg} alt="shape" />
-                </div>
-              )}
+          {/*<div className="section-header">*/}
+          {/*  <div className="section-title-wrapper">*/}
+          {/*    {heroData?.shapeImg && (*/}
+          {/*      <div*/}
+          {/*        className="shape-1 fade-anim"*/}
+          {/*        data-direction="top"*/}
+          {/*        data-ease="bounce"*/}
+          {/*        data-delay="0.90"*/}
+          {/*        data-offset="100"*/}
+          {/*        suppressHydrationWarning={true}*/}
+          {/*      >*/}
+          {/*        <img src={heroData?.shapeImg} alt="shape" />*/}
+          {/*      </div>*/}
+          {/*    )}*/}
 
-              {heroData?.subtitle && (
-                <div className="subtitle-wrapper">
-                  <span
-                    className="section-subtitle char-anim"
-                    data-direction="left"
-                    data-delay="0.45"
-                    data-offset="100"
-                    suppressHydrationWarning={true}
-                  >
-                    {heroData?.subtitle}
-                  </span>
-                </div>
-              )}
+          {/*    {heroData?.subtitle && (*/}
+          {/*      <div className="subtitle-wrapper">*/}
+          {/*        <span*/}
+          {/*          className="section-subtitle char-anim"*/}
+          {/*          data-direction="left"*/}
+          {/*          data-delay="0.45"*/}
+          {/*          data-offset="100"*/}
+          {/*          suppressHydrationWarning={true}*/}
+          {/*        >*/}
+          {/*          {heroData?.subtitle}*/}
+          {/*        </span>*/}
+          {/*      </div>*/}
+          {/*    )}*/}
 
-              {heroData.typewriterStrings && heroData.typewriterStrings.length > 0  && (
-                <div className="title-wrapper type-out-wrapper">
-                  <h1
-                    className="section-title typed-out fade-anim"
-                    data-direction="left"
-                    data-delay="0.30"
-                    data-offset="100"
-                    suppressHydrationWarning={true}
-                  >
-                    <Typewriter
-                      options={{
-                        strings: heroData?.typewriterStrings,
-                        autoStart: true,
-                        loop: true,
-                        delay: 100,
-                        deleteSpeed: 50,
-                        cursorClassName: "opacity-0 w-1 d-inline-block",
-                      }}
-                    />
-                  </h1>
-                </div>
-              )}
-            </div>
-          </div>
+          {/*    {heroData.typewriterStrings && heroData.typewriterStrings.length > 0  && (*/}
+          {/*      <div className="title-wrapper type-out-wrapper">*/}
+          {/*        <h1*/}
+          {/*          className="section-title typed-out fade-anim"*/}
+          {/*          data-direction="left"*/}
+          {/*          data-delay="0.30"*/}
+          {/*          data-offset="100"*/}
+          {/*          suppressHydrationWarning={true}*/}
+          {/*        >*/}
+          {/*          <Typewriter*/}
+          {/*            options={{*/}
+          {/*              strings: heroData?.typewriterStrings,*/}
+          {/*              autoStart: true,*/}
+          {/*              loop: true,*/}
+          {/*              delay: 100,*/}
+          {/*              deleteSpeed: 50,*/}
+          {/*              cursorClassName: "opacity-0 w-1 d-inline-block",*/}
+          {/*            }}*/}
+          {/*          />*/}
+          {/*        </h1>*/}
+          {/*      </div>*/}
+          {/*    )}*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
 
         <div className="section-content-wrapper">
           {/*<div className="container">*/}
             <div className="section-content section-spacing-bottom">
-              {heroData.lines && heroData.lines.length > 0 && (
-                <div className="content-lines">
-                  {heroData?.lines?.map((line, idx) => (
-                    <div key={idx} className={line}></div>
-                  ))}
-                </div>
-              )}
+              {/*{heroData.lines && heroData.lines.length > 0 && (*/}
+              {/*  <div className="content-lines">*/}
+              {/*    {heroData?.lines?.map((line, idx) => (*/}
+              {/*      <div key={idx} className={line}></div>*/}
+              {/*    ))}*/}
+              {/*  </div>*/}
+              {/*)}*/}
 
                 <VideoSection data={videoData}/>
 

@@ -26,7 +26,7 @@ import blogData from "@/constant/DigitalAgency/blog";
 const Home = (): ReactElement => {
   return (
     <div className="body-wrapper body-digital-agency">
-      <Header />
+      {/*<Header />*/}
       <SmoothScroll>
         <main>
           <HeroSection data={heroData} />

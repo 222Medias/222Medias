@@ -24,7 +24,7 @@ interface HeaderData {
 const headerData: HeaderData = {
   logo: {
     href: "/",
-    src: "/assets/imgs/logo/logo.svg",
+    src: "/assets/imgs/logo/white-logo.svg",
     alt: "Site Logo",
   },
   menuItems: [
@@ -93,7 +93,7 @@ const headerData: HeaderData = {
     },
     { title: "Contacts", href: "/contact" },
   ],
-  offcanvasIconSrc: "/assets/imgs/icon/icon-4.webp",
+  offcanvasIconSrc: "/assets/imgs/icon/icon-4-white.png",
 };
 
 const Header = () => {
@@ -165,10 +165,22 @@ const Header = () => {
               </div>
 
               {/* Nav Menu Section (Centered/Right) */}
-              <div className="header-nav d-none d-xl-inline-block">
+              <div className="header-nav d-none d-xl-inline-flex">
                 <nav className="main-menu">
                   <ul>{renderMenu(headerData.menuItems)}</ul>
                 </nav>
+              </div>
+
+              {/* Contact Button - Desktop Only */}
+              <div className="header-contact-btn d-none d-xl-inline-flex">
+                <Link href="/contact" className="btn-contact-modern">
+                  <span className="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 15.46l-5.27-.61-2.52 2.52a15.045 15.045 0 01-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <span className="btn-text">Contact Us</span>
+                </Link>
               </div>
 
               {/* Mobile Toggle Section */}

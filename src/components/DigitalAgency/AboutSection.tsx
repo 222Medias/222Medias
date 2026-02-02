@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import counterUp from "counterup2";
-import { AboutData, ICounter } from "@/constant/DigitalAgency/about";
+import { AboutData } from "@/constant/DigitalAgency/about";
 
 interface AboutProps {
   className?: string;

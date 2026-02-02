@@ -163,26 +163,21 @@ const WorkSection: React.FC<WorkProps> = ({
                           ))}
                         </ul>
                       </div>
-                      <div className="t-btn-group">
+                      <div className="d-flex gap-3">
                         <Link
-                          className="t-btn t-btn-circle"
-                          href={item.ctaLink || "#"}
-                        >
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                        <Link
-                          className="t-btn t-btn-primary"
-                          href={item.ctaLink || "#"}
+                            className="t-btn t-btn-primary"
+                            href={"#"}
                         >
                           {item.ctaText}
                         </Link>
                         <Link
-                          className="t-btn t-btn-circle"
-                          href={item.ctaLink || "#"}
+                            className="t-btn t-btn-circle"
+                            href={"#"}
                         >
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
                       </div>
+
                     </div>
                   </div>
                 ))}
