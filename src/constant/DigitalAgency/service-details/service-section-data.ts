@@ -54,11 +54,11 @@ const serviceData: IServiceData = {
   ],
   gallery: [
     {
-      src: "/assets/imgs/gallery/image-52.webp",
+      src: "/assets/imgs/gallery/service-details-1.jpg",
       alt: "Gallery Image 1",
     },
     {
-      src: "/assets/imgs/gallery/image-53.webp",
+      src: "/assets/imgs/gallery/service-details-2.webp",
       alt: "Gallery Image 2",
     },
   ],

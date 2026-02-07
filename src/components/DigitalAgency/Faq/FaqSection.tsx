@@ -1,6 +1,7 @@
 "use client";
 import { IFaq } from "@/constant/DigitalAgency/faq/faq-data";
 import { Accordion } from "react-bootstrap";
+import React from "react";
 
 interface FaqProps {
   type?: number;
@@ -9,9 +10,10 @@ interface FaqProps {
 }
 
 const FaqSection:React.FC<FaqProps> = ({ type, imageSrc: img,data:faqData }) => {
-  const imageSrc1 = "/assets/imgs/gallery/image-21.webp";
-  const imageSrc2 = "/assets/imgs/gallery/image-22.webp";
-  const imageSrc = img === 2 ? imageSrc2 : imageSrc1;
+  // const imageSrc1 = "/assets/imgs/gallery/image-21.webp";
+  // const imageSrc2 = "/assets/imgs/gallery/image-22.webp";
+  // const imageSrc = img === 2 ? imageSrc2 : imageSrc1;
+  const imageSrc = "/assets/imgs/gallery/faq-image.webp";
 
   return (
     <section className={`${type === 2 ? "faq-area-2" : "faq-area"} `}>

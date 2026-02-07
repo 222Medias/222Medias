@@ -31,7 +31,7 @@ export interface FooterData {
 }
 
 const footerData: FooterData = {
-  bgImage: "/assets/imgs/bg/footer-bg.webp",
+  bgImage: "/assets/imgs/gallery/image-8.webp",
   widgets: [
     {
       type: "contact",

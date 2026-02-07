@@ -7,6 +7,9 @@ import useStickyHeader from "@/Hook/useStickyHeader";
 interface MenuItem {
   title: string;
   href?: string;
+  description?: string;
+  icon?: string;
+  isMegaMenu?: boolean;
   children?: MenuItem[];
 }
 
@@ -32,12 +35,63 @@ const headerData: HeaderData = {
   menuItems: [
     {
       title: "Home",
-        href: "/",
+      href: "/",
     },
     { title: "About Us", href: "/about" },
     {
-      title: "Service",
-        href: "/services",
+      title: "Services",
+      href: "/services",
+      isMegaMenu: true,
+      children: [
+        {
+          title: "Search Engine Optimization (SEO)",
+          href: "/services/seo",
+          icon: "/assets/imgs/icon/services-icons/SEO.svg",
+          description: "Want to rank your business on Google? We can help!",
+        },
+        {
+          title: "Website Design",
+          href: "/services/web-design",
+          icon: "/assets/imgs/icon/services-icons/Web Design.svg",
+          description: "Keep your online presence looking fresh and professional!",
+        },
+        {
+          title: "Social Media Solutions",
+          href: "/services/social-media",
+          icon: "/assets/imgs/icon/services-icons/Social Media Solutions.svg",
+          description: "Facebook, Instagram, and Google Business Profile.",
+        },
+        {
+          title: "Pay-Per-Click (PPC) Ads",
+          href: "/services/ppc",
+          icon: "/assets/imgs/icon/services-icons/PPC Ads.svg",
+          description: "Make the most of your advertising budget.",
+        },
+        {
+          title: "Review Marketing",
+          href: "/services/review-marketing",
+          icon: "/assets/imgs/icon/services-icons/Review Marketing.svg",
+          description: "Maintain your presence online with review marketing.",
+        },
+        {
+          title: "Logo + Graphic Design",
+          href: "/services/graphic-design",
+          icon: "/assets/imgs/icon/services-icons/Graphic Design.svg",
+          description: "Stay top of mind with a memorable logo.",
+        },
+        {
+          title: "Branding",
+          href: "/services/branding",
+          icon: "/assets/imgs/icon/services-icons/Branding.svg",
+          description: "Stay consistent with your style and messaging.",
+        },
+        {
+          title: "Email Marketing",
+          href: "/services/email-marketing",
+          icon: "/assets/imgs/icon/services-icons/Email Marketing.svg",
+          description: "Connect with your customers through email.",
+        },
+      ],
     },
     { title: "Contact", href: "/contact" },
   ],
@@ -53,18 +107,76 @@ const Header: React.FC = () => {
   useStickyHeader();
 
   const renderMenu = (items: MenuItem[]): ReactNode[] =>
-    items?.map((item, i) => (
-      <li key={i} className={item?.children ? "menu-item-has-children" : ""}>
-        {item?.href ? (
-          <Link href={item?.href}>{item?.title}</Link>
-        ) : (
-          <Link href="#0">{item?.title}</Link>
-        )}
-        {item?.children && (
-          <ul className="dp-menu">{renderMenu(item?.children)}</ul>
-        )}
-      </li>
-    ));
+    items?.map((item, i) => {
+      // Mega Menu Logic
+      if (item.isMegaMenu && item.children) {
+        return (
+          <li key={i} className="menu-item-has-children mega-menu-parent">
+            <Link href={item.href || "#"}>{item.title}</Link>
+            <div className="mega-menu-container">
+              <div className="mega-menu-wrapper">
+                {/* Left Side - Menu Items */}
+                <div className="mega-menu-main">
+                  <div className="mega-menu-header">Services Overview</div>
+                  <ul className="mega-menu-grid">
+                    {item.children.map((child, idx) => (
+                      <li key={idx} className="mega-menu-item">
+                        <Link href={child.href || "#"}>
+                          <span className="icon-box">
+                            {child.icon && (
+                              <img src={child.icon} alt={`${child.title} icon`} />
+                            )}
+                          </span>
+                          <div className="content-box">
+                            <span className="title">{child.title}</span>
+                            <p className="description">{child.description}</p>
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* View All Services Button */}
+                  <div className="mega-menu-footer">
+                    <Link href="/services" className="view-all-btn">
+                      View All Services
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Right Side - CTA Card */}
+                <div className="mega-menu-cta">
+                  <h3>Schedule a Consultation</h3>
+                  <Link href="/contact" className="cta-button">
+                    Schedule now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </li>
+        );
+      }
+
+      // Standard Menu Item or Dropdown
+      return (
+        <li key={i} className={item?.children ? "menu-item-has-children" : ""}>
+          {item?.href ? (
+            <Link href={item?.href}>{item?.title}</Link>
+          ) : (
+            <Link href="#0">{item?.title}</Link>
+          )}
+          {item?.children && (
+            <ul className="dp-menu">{renderMenu(item?.children)}</ul>
+          )}
+        </li>
+      );
+    });
 
   return (
     <>
