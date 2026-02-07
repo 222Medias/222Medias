@@ -817,7 +817,7 @@
           padding: 0;
           box-shadow: none;
           font-weight: 400;
-          color: var(--action);
+          color: var(--primary);
           justify-content: space-between;
 
           &::after {
@@ -1486,18 +1486,20 @@
 
   .header-logo {
     // width: 101px;
-    width: 170px;
+    width: 200px;
 
-    // @media #{$xl} {
-    //   width: 101px;
-    // }
+    &:hover {
+      transform: scale(1.02);
+    }
 
     @media #{$md} {
-      width: 101px;
+      width: 160px;
     }
 
     img {
       width: 100%;
+      height: auto;
+      display: block;
     }
   }
 

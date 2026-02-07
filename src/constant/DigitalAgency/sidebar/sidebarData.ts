@@ -43,9 +43,22 @@ const sidebar: SidebarData = {
   menus: [
     {
       label: "Home",
-        href: "/",
+      href: "/",
     },
-    {label: "Services", href: "/services" },
+    {
+      label: "Services",
+      href: "/services",
+      children: [
+        { label: "Web Design", href: "/services/web-design" },
+        { label: "SEO", href: "/services/seo" },
+        { label: "Social Media Solutions", href: "/services/social-media" },
+        { label: "Pay-Per-Click (PPC) Ads", href: "/services/ppc" },
+        { label: "Review Marketing", href: "/services/review-marketing" },
+        { label: "Graphic Design", href: "/services/graphic-design" },
+        { label: "Branding", href: "/services/branding" },
+        { label: "Email Marketing", href: "/services/email-marketing" },
+      ],
+    },
     { label: "About Us", href: "/about" },
     { label: "Contact Us", href: "/contact" },
   ],
