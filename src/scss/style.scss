@@ -8231,7 +8231,6 @@
 
 /* Problem Section Styles */
 .problem-area {
-  background-color: #f8f9fa;
 
   .problem-area-inner {
     position: relative;
@@ -8300,7 +8299,7 @@
   }
 
   .problem-box {
-    background: #ffffff;
+    background: #f8f9fa;
     padding: 35px 30px;
     border-radius: 6px;
     display: flex;
@@ -8492,6 +8491,7 @@
 .why-work-area {
   background-color: #1a1a1a;
   color: #ffffff;
+  padding: 30px 0;
 
   .why-work-area-inner {
     position: relative;
@@ -14999,12 +14999,12 @@
   }
 
   .section-title {
-    font-size: 180px;
+    font-size: 130px;
     font-weight: 600;
     line-height: 1.08;
 
     @media #{$xxl} {
-      font-size: 150px;
+      font-size: 130px;
     }
 
     @media #{$xl} {
@@ -15025,18 +15025,18 @@
   }
 
   .section-subtitle {
-    font-size: 110px;
+    font-size: 50px;
     font-style: italic;
     font-weight: 500;
     line-height: 1.13;
     display: inline-block;
 
     @media #{$xxl} {
-      font-size: 90px;
+      font-size: 50px;
     }
 
     @media #{$xl} {
-      font-size: 80px;
+      font-size: 50px;
     }
 
     @media #{$md} {
@@ -15044,11 +15044,11 @@
     }
 
     @media #{$sm} {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     @media #{$xs} {
-      font-size: 32px;
+      font-size: 25px;
     }
 
     &:before {
@@ -17559,4 +17559,8 @@
     max-width: 0;
     max-height: 0;
   }
+}
+
+.text-primary {
+  color: var(--action) !important;
 }

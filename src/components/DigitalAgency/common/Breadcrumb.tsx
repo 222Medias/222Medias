@@ -38,7 +38,7 @@ const Breadcrumb:React.FC<BreadcrumbProps> = ({ title, subTitle, pageName }) => 
               data-delay="0.60"
               data-offset="100"
             >
-              <img src="/assets/imgs/shape/shape-36.webp" alt="image" />
+              <img src="/assets/imgs/shape/symbol3.svg" alt="image" />
             </div>
             <div className="section-content">
               <div className="section-title-wrapper">

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/DigitalAgency/common/Breadcrumb";
 import ChooseUsSection from "@/components/DigitalAgency/common/ChooseUsSection";
 import ContactSection from "@/components/DigitalAgency/Contact/ContactSection";
-import Header from "@/components/DigitalAgency/Header";
+import Header from "@/components/DigitalAgency/common/Header";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
 

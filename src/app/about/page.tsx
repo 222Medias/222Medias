@@ -2,31 +2,41 @@ import { ReactElement } from "react";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/DigitalAgency/common/Breadcrumb";
 import AboutSection from "@/components/DigitalAgency/AboutSection";
-import VideoSection from "@/components/DigitalAgency/About/VideoSection";
-import TeamsSection from "@/components/DigitalAgency/TeamsSection";
-import TextSliderSection from "@/components/DigitalAgency/TextSliderSection";
-import BlogSection from "@/components/DigitalAgency/BlogSection";
+import ServiceSection from "@/components/DigitalAgency/ServiceSection";
+import ProcessSection from "@/components/DigitalAgency/ProcessSection";
+import WhyWorkWithUsSection from "@/components/DigitalAgency/WhyWorkWithUsSection";
+import FinalCTASection from "@/components/DigitalAgency/FinalCTASection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
-import Header from "@/components/DigitalAgency/Header";
+import Header from "@/components/DigitalAgency/common/Header";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
+import StorySection from "@/components/DigitalAgency/StorySection";
+import MissionVisionSection from "@/components/DigitalAgency/MissionVisionSection";
 
 // component data
 import aboutData from "@/constant/DigitalAgency/about";
-import videoData from "@/constant/DigitalAgency/About/video";
-import teamData from "@/constant/DigitalAgency/teams";
-import textSliderData from "@/constant/DigitalAgency/textSlider";
-import blogData from "@/constant/DigitalAgency/blog";
+import storyData from "@/constant/DigitalAgency/story";
+import serviceData from "@/constant/DigitalAgency/service";
+import missionVisionData from "@/constant/DigitalAgency/missionVision";
+import processData from "@/constant/DigitalAgency/process";
+import whyWorkData from "@/constant/DigitalAgency/whyWork";
+
+// Prepare data for FinalCTASection
+const finalCTAData = {
+  title: "Let’s Work Together",
+  description: "Ready to build a stronger brand and better results?",
+  buttonText: "Get a Free Consultation",
+};
 
 export const metadata: Metadata = {
   title: "About 222Medias",
   description:
-    "Learn about 222Medias, a creative digital agency dedicated to helping brands grow. Discover our mission, our approach, and the team that makes it all happen.",
+    "Learn about 222Medias, a creative and digital marketing agency loaded with strategy, design, and performance to deliver real results.",
   keywords: [
     "about 222Medias",
     "digital agency mission",
-    "creative agency team",
-    "brand strategy experts",
-    "marketing and design firm",
+    "creative agency",
+    "brand strategy",
+    "marketing results",
   ],
 };
 
@@ -38,10 +48,11 @@ const AboutPage = (): ReactElement => {
         <main>
           <Breadcrumb title="ABOUT" subTitle="222Medias" pageName="ABOUT 222Medias" />
           <AboutSection className="page-about" data={aboutData} />
-          <VideoSection data={videoData} />
-          <TeamsSection data={teamData} />
-          <TextSliderSection data={textSliderData} />
-          <BlogSection data={blogData} />
+          <StorySection data={storyData} />
+          <MissionVisionSection data={missionVisionData} />
+          <ProcessSection data={processData} />
+          <WhyWorkWithUsSection data={whyWorkData} />
+          <FinalCTASection data={finalCTAData} />
         </main>
         <FooterSection />
       </SmoothScroll>
