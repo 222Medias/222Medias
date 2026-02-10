@@ -22,12 +22,12 @@ export interface AboutData {
 }
 
 export const aboutData: AboutData = {
-  subtitle: "About Us",
-  title: "We Build Brands That Grow",
+  subtitle: "Who We Are",
+  title: "We Help Businesses Grow",
   description:
-    "222Medias is a creative and digital marketing agency focused on helping businesses stand out, connect with their audience, and grow with purpose. We combine strategy, design, and performance to deliver work that drives real results.",
-  ctaText: "Get a Free Consultation",
-  ctaLink: "/contact",
+    "222Medias is a B2B marketing and web solutions agency helping businesses grow through strategy, creativity, and performance-driven execution.",
+  ctaText: "Learn More",
+  ctaLink: "/about",
   circleImages: {
     textImg: "/assets/imgs/shape/shape-2.webp",
     iconImg: "/assets/imgs/shape/shape-3.webp",

@@ -15,31 +15,38 @@ export interface ProcessData {
 }
 
 const processData: ProcessData = {
-  sectionSubtitle: "How We Work",
-  sectionTitle: "Our Process",
+  sectionSubtitle: "Our Strategy",
+  sectionTitle: "Our work process",
   ctaText: "Contact Us",
   ctaLink: "/contact",
   steps: [
     {
       id: 1,
       number: "01",
-      title: "Strategy First",
-      description: "We start by understanding your goals, audience, and challenges.",
+      title: "Discover",
+      description: "Understand business, market, and objectives.",
       image: "/assets/imgs/icon/icon1.png",
     },
     {
       id: 2,
       number: "02",
-      title: "Purposeful Design",
-      description: "Every detail is created to support function and performance.",
+      title: "Plan",
+      description: "Define strategy, messaging, and execution roadmap.",
       image: "/assets/imgs/icon/icon2.png",
     },
     {
       id: 3,
       number: "03",
-      title: "Continuous Improvement",
-      description: "We refine, optimize, and grow with your business.",
+      title: "Build",
+      description: "Design, content, and development aligned to goals.",
       image: "/assets/imgs/icon/icon3.png",
+    },
+    {
+      id: 4,
+      number: "04",
+      title: "Launch & Optimize",
+      description: "Deploy with confidence, measure, and refine.",
+      image: "/assets/imgs/icon/icon4.png",
     },
   ],
 };

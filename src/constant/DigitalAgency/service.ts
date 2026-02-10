@@ -17,9 +17,9 @@ export interface ServiceData {
   services: IService[];
 }
 const serviceData = {
-  sectionSubtitle: "What We Do",
-  sectionTitle: "We create marketing systems that support long-term success.",
-  viewAllText: "From branding and design to websites and digital campaigns, everything we build is designed to attract, engage, and convert — with strategy at the core.",
+  sectionSubtitle: "Our Services",
+  sectionTitle: "What we offer to you",
+  viewAllText: "Explore All Services",
   viewAllLink: "/services",
   services: [
     {
