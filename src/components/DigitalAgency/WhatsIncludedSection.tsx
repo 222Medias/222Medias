@@ -28,7 +28,7 @@ const WhatsIncludedSection: React.FC<WhatsIncludedSectionProps> = ({ data }) => 
 
           <div className="features-wrapper-box">
             <div className="features-wrapper">
-              {data.categories.map((category, index) => (
+              {data?.categories?.map((category, index) => (
                 <div
                   key={index}
                   className="feature-box-1 fade-anim"
