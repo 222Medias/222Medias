@@ -39,7 +39,7 @@ export interface SidebarData {
 }
 
 const sidebar: SidebarData = {
-  logo: "/assets/imgs/logo/logo.svg",
+  logo: "/assets/imgs/logo/logo-colors-black.svg",
   menus: [
     {
       label: "Home",
@@ -87,7 +87,7 @@ const sidebar: SidebarData = {
     { label: "IN", href: "#" },
     { label: "BE", href: "#" },
   ],
-  footerLogo: "/assets/imgs/logo/logo.svg",
+  footerLogo: "/assets/imgs/logo/logo-colors-black.svg",
 };
 
 export default sidebar;

@@ -74,7 +74,7 @@ const footerData: FooterData = {
     "We help brands look better, communicate clearer, and grow faster.",
   copyrightText: "© 2026 222Medias. All rights reserved.",
   logo: {
-    src: "/assets/imgs/logo/white-logo.svg",
+    src: "/assets/imgs/logo/logo-colors-white.svg",
     alt: "222Medias Logo",
     href: "/",
   },

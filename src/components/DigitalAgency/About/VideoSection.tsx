@@ -25,18 +25,18 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
           <div className="section-content">
               <div className="section-header">
                   <div className="section-title-wrapper">
-                      {heroData?.shapeImg && (
-                          <div
-                              className="shape-1 fade-anim"
-                              data-direction="top"
-                              data-ease="bounce"
-                              data-delay="0.90"
-                              data-offset="100"
-                              suppressHydrationWarning={true}
-                          >
-                              <img src={heroData?.shapeImg} alt="shape" />
-                          </div>
-                      )}
+                      {/*{heroData?.shapeImg && (*/}
+                      {/*    <div*/}
+                      {/*        className="shape-1 fade-anim"*/}
+                      {/*        data-direction="top"*/}
+                      {/*        data-ease="bounce"*/}
+                      {/*        data-delay="0.90"*/}
+                      {/*        data-offset="100"*/}
+                      {/*        suppressHydrationWarning={true}*/}
+                      {/*    >*/}
+                      {/*        <img src={heroData?.shapeImg} alt="shape" />*/}
+                      {/*    </div>*/}
+                      {/*)}*/}
 
                       {heroData?.subtitle && (
                           <div className="subtitle-wrapper">
@@ -87,22 +87,6 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
                   )}
 
                   {heroData?.button?.text && heroData?.button?.url && (
-                      // <div className="btn-wrapper fade-anim" data-delay="0.60" suppressHydrationWarning={true}>
-                      //     <div className="d-flex justify-content-center align-items-center">
-                      //         <Link
-                      //             href={heroData?.button?.url}
-                      //             className="t-btn t-btn-primary"
-                      //         >
-                      //             {heroData?.button?.text}
-                      //         </Link>
-                      //         <Link
-                      //             href={heroData?.button?.url}
-                      //             className="t-btn t-btn-circle"
-                      //         >
-                      //             <i className="fa-solid fa-arrow-right"></i>
-                      //         </Link>
-                      //     </div>
-                      // </div>
                       <div className="btn-wrapper fade-anim">
                           <div className="t-btn-group">
                               <Link className="t-btn t-btn-circle" href={heroData?.button?.url || "#"}>
@@ -118,14 +102,6 @@ const VideoSection = ({ data: videoData }: VideoProps) => {
                       </div>
                   )}
               </div>
-            {/*<div className="section-title-wrapper">*/}
-            {/*  <div className="subtitle-wrapper fade-anim">*/}
-            {/*    <span className="section-subtitle">{subtitle}</span>*/}
-            {/*  </div>*/}
-            {/*  <div className="title-wrapper fade-anim ">*/}
-            {/*    <h2 className="section-title">{title}</h2>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
           </div>
         </div>
       </div>

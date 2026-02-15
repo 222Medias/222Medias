@@ -28,7 +28,7 @@ interface HeaderData {
 
 const headerData: HeaderData = {
   logo: {
-    src: "/assets/imgs/logo/logo.svg",
+    src: "/assets/imgs/logo/logo-colors-black.svg",
     alt: "Site Logo",
     href: "/",
   },

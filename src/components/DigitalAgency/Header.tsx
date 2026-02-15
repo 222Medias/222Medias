@@ -24,7 +24,7 @@ interface HeaderData {
 const headerData: HeaderData = {
   logo: {
     href: "/",
-    src: "/assets/imgs/logo/white-logo.svg",
+    src: "/assets/imgs/logo/logo-colors-white.svg",
     alt: "Site Logo",
   },
   menuItems: [
