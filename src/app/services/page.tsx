@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/DigitalAgency/common/Breadcrumb";
 import ProcessSection from "@/components/DigitalAgency/ProcessSection";
 import ServiceSection from "@/components/DigitalAgency/ServiceSection";
-import InfoSection from "@/components/DigitalAgency/InfoSection";
 import ChooseUsSection from "@/components/DigitalAgency/common/ChooseUsSection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import Header from "@/components/DigitalAgency/common/Header";
@@ -42,7 +41,6 @@ const ServicesPage = (): ReactElement => {
           />
           <ProcessSection className="page-services" data={processData} />
           <ServiceSection data={serviceData} />
-          <InfoSection type={2} data={infoData} />
           <ChooseUsSection data={chooseUsData} />
         </main>
         <FooterSection />
