@@ -68,12 +68,12 @@ const AboutSection:React.FC<AboutProps> = ({className:updateClass,data:aboutData
             </div>
 
             <div className="about-thumb fade-anim">
-              <div className="btn-wrapper">
-                <Link href={aboutData?.circleImages?.link || "#"} className="circle-text btn-item">
-                  <img src={aboutData?.circleImages?.textImg} alt="text shape" className="text" />
-                  <img src={aboutData?.circleImages?.iconImg} alt="icon shape" className="icon" />
-                </Link>
-              </div>
+              {/*<div className="btn-wrapper">*/}
+              {/*  <Link href={aboutData?.circleImages?.link || "#"} className="circle-text btn-item">*/}
+              {/*    <img src={aboutData?.circleImages?.textImg} alt="text shape" className="text" />*/}
+              {/*    <img src={aboutData?.circleImages?.iconImg} alt="icon shape" className="icon" />*/}
+              {/*  </Link>*/}
+              {/*</div>*/}
               <div className="image img_anim_reveal">
                 <img src={aboutData?.mainImage} alt="about image" />
               </div>

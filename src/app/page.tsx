@@ -1,6 +1,4 @@
-import { Metadata } from "next";
 import { ReactElement } from "react";
-import Header from "@/components/DigitalAgency/Header";
 import AboutSection from "@/components/DigitalAgency/AboutSection";
 import BlogSection from "@/components/DigitalAgency/BlogSection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";

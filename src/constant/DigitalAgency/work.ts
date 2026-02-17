@@ -21,19 +21,19 @@ const workData: WorkData = {
   capabilities: [
     {
       id: 1,
-      number: "01/",
-      title: "Brand Identity & Strategy",
+      number: "03/",
+      title: "Web & UI Experience",
       description:
-        "We build clear, scalable brand systems — from positioning and messaging to visual identity and guidelines.",
+          "Conversion-focused websites and interfaces designed to look premium and perform across all devices.",
       includes: [
-        "Brand positioning",
-        "Logo & visual systems",
-        "Brand guidelines",
-        "Tone of voice",
+        "Website design",
+        "Landing pages",
+        "UX/UI design",
+        "No-code & custom builds",
       ],
-      ctaText: "Explore Branding",
-      ctaLink: "/digital-agency/branding-details", // Example link
-      image: "/assets/imgs/project/project-1.png", // Reusing existing image
+      ctaText: "Explore Web Design",
+      ctaLink: "/digital-agency/web-design-details", // Example link
+      image: "/assets/imgs/project/project-3.png", // Reusing existing image
     },
     {
       id: 2,
@@ -53,22 +53,6 @@ const workData: WorkData = {
     },
     {
       id: 3,
-      number: "03/",
-      title: "Web & UI Experience",
-      description:
-        "Conversion-focused websites and interfaces designed to look premium and perform across all devices.",
-      includes: [
-        "Website design",
-        "Landing pages",
-        "UX/UI design",
-        "No-code & custom builds",
-      ],
-      ctaText: "Explore Web Design",
-      ctaLink: "/digital-agency/web-design-details", // Example link
-      image: "/assets/imgs/project/project-3.png", // Reusing existing image
-    },
-    {
-      id: 4,
       number: "04/",
       title: "Creative Direction & Content",
       description:
@@ -82,6 +66,22 @@ const workData: WorkData = {
       ctaText: "Explore Creative",
       ctaLink: "/digital-agency/creative-details", // Example link
       image: "/assets/imgs/project/project-4.png", // Reusing existing image
+    },
+    {
+      id: 4,
+      number: "01/",
+      title: "Brand Identity & Strategy",
+      description:
+          "We build clear, scalable brand systems — from positioning and messaging to visual identity and guidelines.",
+      includes: [
+        "Brand positioning",
+        "Logo & visual systems",
+        "Brand guidelines",
+        "Tone of voice",
+      ],
+      ctaText: "Explore Branding",
+      ctaLink: "/digital-agency/branding-details", // Example link
+      image: "/assets/imgs/project/project-1.png", // Reusing existing image
     },
   ],
 };

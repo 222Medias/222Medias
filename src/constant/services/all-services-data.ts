@@ -37,6 +37,25 @@ export interface ServicePageData {
     description: string;
     buttonText: string;
   };
+  pricingSection?: {
+    title: string;
+    plans: {
+      name: string;
+      price: string;
+      period: string;
+      subtitle: string;
+      features: string[];
+    }[];
+  };
+  addonsSection?: {
+    title: string;
+    items: {
+      title: string;
+      price: string;
+      period: string;
+      description: string;
+    }[];
+  };
 }
 
 export const allServicesData: ServicePageData[] = [
@@ -57,7 +76,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Consultation",
+          label: "Get a Consultation",
         },
         {
           href: "/contact",
@@ -232,7 +251,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Build Your Website",
       description: "Turn your website into a powerful tool that impresses visitors and drives results.",
-      buttonText: "Request a Free Web Design Consultation",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -252,7 +271,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Consultation",
+          label: "Get a Consultation",
         },
         {
           href: "/contact",
@@ -427,7 +446,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Improve Your Search Visibility",
       description: "Turn your website into a reliable source of qualified leads.",
-      buttonText: "Request a Free SEO Consultation",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -447,7 +466,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Social Media Consultation",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -618,7 +637,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Grow Your Social Media Presence",
       description: "Turn your social media into a powerful brand and growth channel — not just another task on your list.",
-      buttonText: "Request a Free Social Media Consultation",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -638,7 +657,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free PPC Strategy Session",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -810,7 +829,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Turn Clicks Into Customers",
       description: "Stop wasting ad spend and start running campaigns built to convert.",
-      buttonText: "Request a Free PPC Strategy Session",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -830,7 +849,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Reputation Review",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -1001,7 +1020,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Turn Reviews Into a Competitive Advantage",
       description: "Build trust, improve visibility, and convert more customers with a strong online reputation.",
-      buttonText: "Request a Free Reputation Review",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -1021,7 +1040,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Design Consultation",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -1192,7 +1211,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Design Your Brand the Right Way",
       description: "Turn your visuals into a powerful brand asset — not an afterthought.",
-      buttonText: "Request a Free Design Consultation",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -1212,7 +1231,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Brand Consultation",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -1385,7 +1404,7 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Build a Brand That Lasts",
       description: "Create a brand that reflects who you are and where your business is going.",
-      buttonText: "Request a Free Brand Consultation",
+      buttonText: "Get a free consultation",
     },
   },
   {
@@ -1405,7 +1424,7 @@ export const allServicesData: ServicePageData[] = [
         {
           href: "/contact",
           style: "t-btn t-btn-primary",
-          label: "Get a Free Email Marketing Consultation",
+          label: "Get a free consultation",
         },
         {
           href: "/contact",
@@ -1578,10 +1597,271 @@ export const allServicesData: ServicePageData[] = [
     finalCTA: {
       title: "Let's Make Email Work for Your Business",
       description: "Turn your email list into a powerful revenue and relationship channel.",
-      buttonText: "Request a Free Email Marketing Consultation",
+      buttonText: "Get a free consultation",
+    },
+  },
+  {
+    slug: "restaurant-platform",
+    name: "Restaurant Platform",
+    heroSection: {
+      subtitle: "All-in-one restaurant platform",
+      title: "All-in-One Restaurant Platform: Zero Commissions",
+      description:
+        "A complete system to run your restaurant, grow your brand, and keep your profits. From online ordering to delivery management—no commissions, just results.",
+      buttons: [
+        {
+          href: "/contact",
+          style: "t-btn t-btn-circle",
+          icon: "fa-solid fa-arrow-right",
+        },
+        {
+          href: "/contact",
+          style: "t-btn t-btn-primary",
+          label: "Start Free Trial",
+        },
+        {
+          href: "/contact",
+          style: "t-btn t-btn-circle",
+          icon: "fa-solid fa-arrow-right",
+        },
+      ],
+      services: [
+        "Online Ordering",
+        "Website Builder",
+        "Mobile App",
+        "Marketing Tools",
+        "Loyalty Program",
+        "QR Code Menu",
+        "Delivery Management",
+        "Order Aggregation",
+      ],
+      gallery: [
+        {
+          src: "/assets/images/Pricing/18.png",
+          alt: "Restaurant Platform Dashboard",
+        },
+        {
+          src: "/assets/images/Pricing/22.png",
+          alt: "Mobile Ordering App",
+        },
+      ],
+    },
+    problemSection: {
+      title: "Stop Losing Money to Third-Party Apps",
+      description: "Restaurants today face high costs and loss of control:",
+      painPoints: [
+        "High commissions (up to 30%) on every order",
+        "No ownership of customer data",
+        "Reliance on third-party delivery drivers",
+        "Difficulty managing multiple tablets and systems",
+      ],
+    },
+    approachSection: {
+      sectionHeader: {
+        subtitle: "About Us",
+        title: "Supporting Restaurants to Grow",
+      },
+      video: {
+        src: "/videos/Business_People.mp4",
+        type: "video/mp4",
+      },
+      content: {
+        title: "We empower restaurateurs with the tools they need to succeed",
+        paragraphs: [
+          "From onboarding to ongoing assistance, we provide flexible tools and strategies tailored to meet the unique goals of each restaurant.",
+          "Our platform has consistently increased order values and customer retention for our clients by putting the power back in your hands.",
+        ],
+      },
+    },
+    whatsIncluded: {
+      title: "Our Offer",
+      categories: [
+        {
+          title: "Online Ordering System",
+          items: [
+            "Save up to 90% on third-party commissions",
+            "Sell directly without a middleman",
+            "Seamlessly manage menu, orders, and delivery",
+            "Integrate with your POS and delivery services",
+          ],
+        },
+        {
+          title: "Restaurant Website & App",
+          items: [
+            "Professional website builder (no coding needed)",
+            "Branded mobile app (iOS & Android)",
+            "Built-in online ordering & reservations",
+            "Supports multi-location restaurants",
+          ],
+        },
+        {
+          title: "Marketing & Loyalty",
+          items: [
+            "Creates promotions and discounts",
+            "Automated loyalty programs (retention on auto-pilot)",
+            "SMS, Email, and Push campaigns",
+            "Detailed reports for informed decisions",
+          ],
+        },
+        {
+          title: "Operations & Delivery",
+          items: [
+            "QR Code Menu & tableside ordering",
+            "Delivery management (track drivers in real-time)",
+            "Optimized routes to save fuel and time",
+            "Delivery dispatching without owning a fleet",
+          ],
+        },
+      ],
+    },
+    processSection: {
+      sectionSubtitle: "Get Started",
+      sectionTitle: "3 Steps to Freedom",
+      ctaText: "Get Started",
+      ctaLink: "/contact",
+      steps: [
+        {
+          id: 1,
+          number: "01",
+          title: "Setup",
+          description: "We help you set up your menu, website, and branded app.",
+          image: "/assets/images/Pricing/5.png",
+        },
+        {
+          id: 2,
+          number: "02",
+          title: "Launch",
+          description: "Go live with your own ordering system and start marketing.",
+          image: "/assets/images/Pricing/0.png",
+        },
+        {
+          id: 3,
+          number: "03",
+          title: "Grow",
+          description: "Retain customers with loyalty programs and keep your profits.",
+          image: "/assets/images/Pricing/1.png",
+        },
+      ],
+    },
+    whyWorkWithUs: {
+      title: "Why Choose Our Platform?",
+      points: [
+        "0% Commissions on orders",
+        "Full control over your customer data",
+        "All-in-one solution (Ordering, Marketing, Delivery)",
+        "Dedicated support to help you grow",
+      ],
+      footer: "Take back control of your restaurant's future.",
+    },
+    idealClients: {
+      title: "Perfect For",
+      description: "Our platform is built for:",
+      points: [
+        "Independent Restaurants",
+        "Multi-location Chains",
+        "Ghost Kitchens",
+        "Cafes & Bars",
+      ],
+    },
+    faqs: [
+      {
+        question: "Is there really no commission?",
+        answer: "Yes, we charge a flat monthly fee. You keep 100% of your sales revenue.",
+      },
+      {
+        question: "Can I use my own drivers?",
+        answer: "Absolutely. Our delivery management system lets you track your own drivers or connect with third-party couriers.",
+      },
+      {
+        question: "Do I need a developer?",
+        answer: "No. Our website builder and setup process are completely code-free.",
+      },
+    ],
+    finalCTA: {
+      title: "Ready to Scale Your Restaurant?",
+      description: "Join thousands of restaurants saving money and growing faster.",
+      buttonText: "Start Free Trial",
+    },
+    pricingSection: {
+      title: "Pricing",
+      plans: [
+        {
+          name: "Standard",
+          price: "$139",
+          period: "/month",
+          subtitle: "per 1 location",
+          features: [
+            "210 orders",
+            "Restaurant website",
+            "Free setup service",
+            "Tableside Ordering",
+            "Table Reservations",
+            "Multi Location",
+            "Online Payments",
+            "Email & SMS marketing",
+            "Coupons & Promo Codes",
+          ],
+        },
+        {
+          name: "Premium",
+          price: "$189",
+          period: "/month",
+          subtitle: "per 1 location",
+          features: [
+            "Unlimited orders",
+            "Marketing Automation",
+            "Gift Cards",
+            "Item Recommendations",
+            "Multiple Menus",
+            "All in Standard plus:",
+          ],
+        },
+      ],
+    },
+    addonsSection: {
+      title: "Addons",
+      items: [
+        {
+          title: "Mobile App",
+          price: "$55",
+          period: "/month",
+          description: "Your own branded mobile app for restaurant ordering.",
+        },
+        {
+          title: "Loyalty Program",
+          price: "$25",
+          period: "/month",
+          description: "Turn your one-time restaurant clients into regular customers.",
+        },
+        {
+          title: "Delivery Dispatcher",
+          price: "$40",
+          period: "/month",
+          description: "Start offering deliveries with third-party services—no own fleet needed.",
+        },
+        {
+          title: "Driver app",
+          price: "$14",
+          period: "/month",
+          description: "Manage your deliveries & drivers with courier app.",
+        },
+        {
+          title: "Order Aggregation",
+          price: "$40",
+          period: "/month",
+          description: "Manage all orders from every channel in one place — no more multiple tablets.",
+        },
+        {
+          title: "POS Integrations",
+          price: "$0",
+          period: "/month",
+          description: "Integrate and sync all of your online orders with your POS system.",
+        },
+      ],
     },
   },
 ];
+
 
 export const getServiceBySlug = (slug: string): ServicePageData | undefined => {
   return allServicesData.find((service) => service.slug === slug);

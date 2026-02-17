@@ -44,9 +44,9 @@ const WorkSection: React.FC<WorkProps> = ({
                       </div>
                     </div>
                     <div className="content">
-                      <span className={`number ${type === 7 ? "d-none" : ""}`}>
-                        {item.number}
-                      </span>
+                      {/*<span className={`number ${type === 7 ? "d-none" : ""}`}>*/}
+                      {/*  {item.number}*/}
+                      {/*</span>*/}
                       <h3 className="title">
                         <Link href={item.ctaLink || "#"}>{item.title}</Link>
                       </h3>
@@ -150,7 +150,7 @@ const WorkSection: React.FC<WorkProps> = ({
                       </div>
                     </div>
                     <div className="content">
-                      <span className="number">{item.number}</span>
+                      {/*<span className="number">{item.number}</span>*/}
                       <h3 className="title">
                         <Link href={item.ctaLink || "#"}>{item.title}</Link>
                       </h3>

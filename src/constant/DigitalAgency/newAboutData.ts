@@ -139,5 +139,5 @@ export const whyChooseUsData = {
 export const ctaData = {
     title: "Let’s Work Together",
     description: "Ready to build a stronger brand and better results?",
-    buttonText: "Get a Free Consultation",
+    buttonText: "Get a Consultation",
 };

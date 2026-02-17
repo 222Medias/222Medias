@@ -36,28 +36,22 @@ const headerData: HeaderData = {
       isMegaMenu: true,
       children: [
         {
-          title: "Search Engine Optimization (SEO)",
-          href: "/services/seo",
-          icon: "/assets/imgs/icon/services-icons/SEO.svg",
-          description: "Want to rank your business on Google? We can help!",
-        },
-        {
           title: "Website Design",
           href: "/services/web-design",
           icon: "/assets/imgs/icon/services-icons/Web Design.svg",
           description: "Keep your online presence looking fresh and professional!",
         },
         {
+          title: "All-in-one Restaurant Platform",
+          href: "/services/restaurant-platform",
+          icon: "/assets/imgs/icon/services-icons/restaurant-icon.png",
+          description: "Streamline your restaurant's online presence with our all-in-one platform.",
+        },
+        {
           title: "Social Media Solutions",
           href: "/services/social-media",
           icon: "/assets/imgs/icon/services-icons/Social Media Solutions.svg",
           description: "Facebook, Instagram, and Google Business Profile.",
-        },
-        {
-          title: "Pay-Per-Click (PPC) Ads",
-          href: "/services/ppc",
-          icon: "/assets/imgs/icon/services-icons/PPC Ads.svg",
-          description: "Make the most of your advertising budget.",
         },
         {
           title: "Review Marketing",
@@ -82,6 +76,18 @@ const headerData: HeaderData = {
           href: "/services/email-marketing",
           icon: "/assets/imgs/icon/services-icons/Email Marketing.svg",
           description: "Connect with your customers through email.",
+        },
+        {
+          title: "Search Engine Optimization (SEO)",
+          href: "/services/seo",
+          icon: "/assets/imgs/icon/services-icons/SEO.svg",
+          description: "Want to rank your business on Google? We can help!",
+        },
+        {
+          title: "Pay-Per-Click (PPC) Ads",
+          href: "/services/ppc",
+          icon: "/assets/imgs/icon/services-icons/PPC Ads.svg",
+          description: "Make the most of your advertising budget.",
         },
       ],
     },

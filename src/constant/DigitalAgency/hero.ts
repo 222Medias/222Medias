@@ -21,7 +21,7 @@ const heroData:HeroData = {
   description:
       "We partner with businesses To drive measurable growth through strategy-led marketing, high-performance websites, and clear execution.",
   button: {
-    text: "Get a Free Consultation",
+    text: "Get a Consultation",
     url: "/contact",
   },
   videoUrl:"/videos/hero-video.webm",

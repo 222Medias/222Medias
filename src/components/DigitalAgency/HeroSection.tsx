@@ -1,11 +1,9 @@
 "use client";
 
 import React from "react";
-import Typewriter from "typewriter-effect";
 import { HeroData } from "@/constant/DigitalAgency/hero";
 import VideoSection from "@/components/DigitalAgency/About/VideoSection";
 import videoData from "@/constant/DigitalAgency/About/video";
-import Link from "next/link";
 interface HeroProps {
   data: HeroData;
 }

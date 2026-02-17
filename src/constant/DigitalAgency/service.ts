@@ -24,20 +24,6 @@ const serviceData = {
   services: [
     {
       id: 1,
-      title: "SEO Optimization",
-      number: "(01)",
-      image: "/assets/imgs/shape/symbol1.svg",
-      description: "Be found by the right customers at the right time with strategic SEO.",
-      detailsLink: "/services/seo",
-      items: [
-        "1. Keyword Research & Strategy",
-        "2. On-Page & Technical SEO",
-        "3. Local SEO & Google Business",
-      ],
-      itemLink: "/services/seo",
-    },
-    {
-      id: 2,
       title: "Web Design",
       number: "(02)",
       image: "/assets/imgs/shape/symbol6.svg",
@@ -51,7 +37,7 @@ const serviceData = {
       itemLink: "/services/web-design",
     },
     {
-      id: 3,
+      id: 2,
       title: "Social Media Solutions",
       number: "(03)",
       image: "/assets/imgs/shape/symbol2.svg",
@@ -65,7 +51,7 @@ const serviceData = {
       itemLink: "/services/social-media",
     },
     {
-      id: 5,
+      id: 3,
       title: "Branding",
       number: "(05)",
       image: "/assets/imgs/shape/symbol4.svg",
@@ -77,6 +63,20 @@ const serviceData = {
         "3. Brand Guidelines",
       ],
       itemLink: "/services/branding",
+    },
+    {
+      id: 4,
+      title: "SEO Optimization",
+      number: "(01)",
+      image: "/assets/imgs/shape/symbol1.svg",
+      description: "Be found by the right customers at the right time with strategic SEO.",
+      detailsLink: "/services/seo",
+      items: [
+        "1. Keyword Research & Strategy",
+        "2. On-Page & Technical SEO",
+        "3. Local SEO & Google Business",
+      ],
+      itemLink: "/services/seo",
     },
   ],
 };

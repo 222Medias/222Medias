@@ -13,6 +13,8 @@ import FinalCTASection from "@/components/DigitalAgency/FinalCTASection";
 import FooterSection from "@/components/DigitalAgency/FooterSection";
 import Header from "@/components/DigitalAgency/common/Header";
 import SmoothScroll from "@/components/DigitalAgency/Animation/SmoothScroll";
+import PricingSection from "@/components/DigitalAgency/PricingSection";
+import AddonsSection from "@/components/DigitalAgency/AddonsSection";
 
 // Import global services data
 import { getServiceBySlug, getAllServiceSlugs } from "@/constant/services/all-services-data";
@@ -82,6 +84,8 @@ const ServicePage = async ({ params }: ServicePageProps): Promise<ReactElement> 
                     <WhatsIncludedSection data={serviceData.whatsIncluded} />
                     <ProcessSection className="page-services" data={serviceData.processSection} />
                     {/*<WhyWorkWithUsSection data={serviceData.whyWorkWithUs} />*/}
+                    {serviceData.pricingSection && <PricingSection data={serviceData.pricingSection} />}
+                    {serviceData.addonsSection && <AddonsSection data={serviceData.addonsSection} />}
                     <IdealClientsSection data={serviceData.idealClients} />
                     <FaqSection type={2} data={serviceData.faqs} />
                     <FinalCTASection data={serviceData.finalCTA} />

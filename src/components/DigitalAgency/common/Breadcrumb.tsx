@@ -31,15 +31,15 @@ const Breadcrumb:React.FC<BreadcrumbProps> = ({ title, subTitle, pageName }) => 
             ))}
           </div>
           <div className="section-content-wrapper">
-            <div
-              className="content-shape-1 fade-anim"
-              data-direction="top"
-              data-ease="bounce"
-              data-delay="0.60"
-              data-offset="100"
-            >
-              <img src="/assets/imgs/shape/symbol3.svg" alt="image" />
-            </div>
+            {/*<div*/}
+            {/*  className="content-shape-1 fade-anim"*/}
+            {/*  data-direction="top"*/}
+            {/*  data-ease="bounce"*/}
+            {/*  data-delay="0.60"*/}
+            {/*  data-offset="100"*/}
+            {/*>*/}
+            {/*  <img src="/assets/imgs/shape/symbol3.svg" alt="image" />*/}
+            {/*</div>*/}
             <div className="section-content">
               <div className="section-title-wrapper">
                 <div className="title-wrapper">

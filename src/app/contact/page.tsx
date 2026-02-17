@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "contact 222Medias",
     "get a quote",
-    "book a call",
+    "Contact us",
     "digital agency contact",
     "brand strategy inquiry",
     "web design contact",
